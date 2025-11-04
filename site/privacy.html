@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+  <link rel="icon" type="image/vnd.microsoft.icon" href="./favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+  <link rel="manifest" href="./assets/manifest.json" />
+  <meta name="theme-color" content="#ff69b4" />
+  <meta name="msapplication-TileColor" content="#ff69b4" />
+  <meta name="msapplication-TileImage" content="./assets/apple-touch-icon.png" />
+  <meta name="msapplication-config" content="./assets/browserconfig.xml" />
+  <title>Privacy Policy — LUNA SEN Regulator</title>
+  <meta name="description"
+    content="Privacy policy for LUNA SEN Regulator SRQF petition campaign. UK GDPR compliant data handling." />
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <style>
+    :root {
+      --luna-bg: #ffffff;
+      --luna-text: #334155;
+      /* LUNA text-primary-dark */
+      --luna-accent-1: #ff69b4;
+      /* LUNA primary pink */
+      --luna-accent-2: #7ad7f0;
+      /* LUNA secondary blue */
+      --luna-link: linear-gradient(135deg, #ff69b4, #7ad7f0);
+      /* LUNA gradient link */
+      --luna-border: #e2e8f0;
+      /* LUNA border-color-light */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--luna-bg);
+      color: var(--luna-text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .luna-gradient {
+      background-image: linear-gradient(90deg, var(--luna-accent-1), var(--luna-accent-2));
+    }
+
+    .luna-text-gradient{ background: linear-gradient(135deg, #ff69b4, #7ad7f0); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+    .nav-link-luna {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+    }
+    .nav-link-luna:hover,
+    .nav-link-luna:active,
+    .nav-link-luna:focus {
+      background: transparent !important;
+      background-image: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+    }
+    .mobile-nav-menu .nav-link-luna {
+      color: white !important;
+    }
+    .mobile-nav-menu .nav-link-luna:hover,
+    .mobile-nav-menu .nav-link-luna:active,
+    .mobile-nav-menu .nav-link-luna:focus {
+      background: transparent !important;
+      background-image: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+    }
+    
+    .mobile-hamburger-btn {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 0.375rem;
+      transition: all 0.2s ease;
+    }
+    .mobile-hamburger-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    
+    .mobile-nav-menu {
+      display: none;
+    }
+    .mobile-nav-menu.hidden {
+      display: none;
+    }
+    .mobile-nav-menu:not(.hidden) {
+      display: block;
+    }
+
+    footer {
+      background: black !important;
+      position: relative;
+      z-index: 10;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      color: white !important;
+    }
+
+    .btn-primary-back {
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      color: black !important;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.75rem;
+      font-weight: 600;
+      border: none;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+    }
+
+    .btn-primary-back:hover {
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+    }
+
+    .card {
+      border: 1px solid var(--luna-border);
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .06);
+    }
+
+    a.link {
+      color: var(--luna-link);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen">
+
+  <!-- HEADER -->
+  <header id="header-nav" class="bg-black w-full">
+    <!-- Mobile Header -->
+    <div class="md:hidden">
+      <div class="px-4 py-2">
+        <div class="flex items-center justify-between gap-2">
+          <div class="flex items-center gap-2 pl-1 flex-shrink-0">
+            <img src="./assets/Luna-logo.png" alt="LUNA Logo" class="h-6 w-6 object-contain" loading="eager" />
+            <div>
+              <h1 class="text-sm font-bold text-white"><span class="luna-text-gradient">LUNA</span> <span
+                  class="text-white">SEN Regulator Petition</span></h1>
+            </div>
+          </div>
+          <a href="index.html"
+            class="btn-primary-back inline-flex items-center justify-center text-xs font-semibold px-3 py-1.5 rounded-lg flex-shrink-0 whitespace-nowrap">←
+            Back</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop Header -->
+    <div class="hidden md:block w-full py-4">
+      <div class="flex items-center justify-between gap-4 w-full">
+        <div class="flex items-center gap-3 flex-shrink-0 pl-4" style="margin-left: 0;">
+          <img src="./assets/Luna-logo.png" alt="LUNA Logo" class="h-10 w-10 object-contain flex-shrink-0"
+            style="margin-left: 0 !important;" loading="eager" />
+          <div>
+            <h1 class="text-lg font-extrabold tracking-tight text-white"><span class="luna-text-gradient">LUNA</span>
+              <span class="text-white">SEN Regulator Petition</span></h1>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 flex-shrink-0 pr-6">
+          <a href="index.html"
+            class="btn-primary-back text-center text-lg px-5 py-3 font-semibold inline-flex items-center justify-center">←
+            Back to Petition</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <main class="py-12">
+    <div class="mx-auto max-w-4xl px-6">
+      <div class="card">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center"><span class="luna-text-gradient">Privacy Policy</span></h2>
+
+        <div class="space-y-6">
+          <section>
+            <h3 class="text-xl font-semibold mb-3">Data Controller</h3>
+            <p>Lauren Moore, LUNA SEN Regulator</p>
+            <p>Contact: <a href="mailto:laurenmoore162@gmail.com" class="link">laurenmoore162@gmail.com</a></p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-semibold mb-3">Lawful Basis for Processing</h3>
+            <p>We process your personal data under <strong>UK GDPR Article 6(1)(a) — Consent</strong>. You provide
+              explicit consent when you sign up for campaign updates.</p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-semibold mb-3">Data We Collect</h3>
+            <p>If you choose to join our campaign updates, we collect:</p>
+            <ul class="list-disc pl-6 mt-2 space-y-1">
+              <li>Name</li>
+              <li>Email address</li>
+              <li>Postcode (for constituency mapping)</li>
+              <li>Role (Parent, Young Person, SENCo, Teacher, LA, Employer, Other)</li>
+              <li>Consent confirmation</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-semibold mb-3">Purpose of Processing</h3>
+            <p>We use your data solely to:</p>
+            <ul class="list-disc pl-6 mt-2 space-y-1">
+              <li>Send you updates about the SRQF petition campaign</li>
+              <li>Present constituency-level evidence to MPs</li>
+              <li>Keep you informed about related policy developments</li>
+            </ul>
+            <p class="mt-3"><strong>We never sell or share your data with third parties.</strong></p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-semibold mb-3">Data Retention</h3>
+            <p>We retain your data for a maximum of <strong>24 months after the petition closes</strong>, or sooner if
+              you request deletion.</p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-semibold mb-3">Your Rights</h3>
+            <p>Under UK GDPR, you have the right to:</p>
+            <ul class="list-disc pl-6 mt-2 space-y-1">
+              <li><strong>Access</strong> your personal data</li>
+              <li><strong>Rectify</strong> inaccurate data</li>
+              <li><strong>Erase</strong> your data ("right to be forgotten")</li>
+              <li><strong>Restrict</strong> processing</li>
+              <li><strong>Object</strong> to processing</li>
+              <li><strong>Data portability</strong></li>
+              <li><strong>Withdraw consent</strong> at any time</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-semibold mb-3">Unsubscribe & Contact</h3>
+            <p>To unsubscribe, request data deletion, or exercise your rights:</p>
+            <p class="mt-2"><strong>Email:</strong> <a href="mailto:laurenmoore162@gmail.com"
+                class="link">laurenmoore162@gmail.com</a></p>
+            <p>We will respond within 30 days.</p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-semibold mb-3">Parliament Petition</h3>
+            <p><strong>Important:</strong> The official Parliament petition is managed separately by the UK Parliament
+              and has its own privacy policy. Signing the Parliament petition is the only signature counted by
+              ministers.</p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-semibold mb-3">Changes to This Policy</h3>
+            <p>We may update this privacy policy. Any changes will be posted on this page with an updated revision date.
+            </p>
+            <p class="mt-2"><strong>Last updated:</strong> September 2025</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-black" style="padding: 20px 0;">
+    <div class="mx-auto max-w-6xl px-6 text-sm text-white">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-2">
+        <p class="text-center md:text-left">Copyright © 2025 <span class="gradient-text">LUNA</span> SEN Regulator - All
+          Rights Reserved.</p>
+
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Force Firefox favicon reload
+    (function(){
+      if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        const favicon = document.createElement('link');
+        favicon.rel = 'icon';
+        favicon.type = 'image/x-icon';
+        favicon.href = './favicon.ico?' + new Date().getTime();
+        const existingFavicon = document.querySelector('link[rel="icon"]');
+        if (existingFavicon) {
+          existingFavicon.parentNode.removeChild(existingFavicon);
+        }
+        document.getElementsByTagName('head')[0].appendChild(favicon);
+      }
+    })();
+  </script>
+
+</body>
+
+</html>

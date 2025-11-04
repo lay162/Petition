@@ -1,0 +1,2206 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+  <link rel="icon" type="image/vnd.microsoft.icon" href="./favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+  <link rel="manifest" href="./assets/manifest.json" />
+  <meta name="theme-color" content="#ff69b4" />
+  <meta name="msapplication-TileColor" content="#ff69b4" />
+  <meta name="msapplication-TileImage" content="./assets/apple-touch-icon.png" />
+  <meta name="msapplication-config" content="./assets/browserconfig.xml" />
+  
+  <!-- Core SEO -->
+  <title>LUNA SEN Regulator Petition — Sign & Support</title>
+  <meta name="description" content="Add your name to support the LUNA SEN Regulator so neurodiverse learners are recognised, protected and given equal opportunities across the UK." />
+  <link rel="canonical" href="https://example.com/" />
+  <meta name="author" content="Lauren Moore" />
+  <meta name="robots" content="index,follow" />
+  
+  <!-- Open Graph / Twitter -->
+  <meta property="og:site_name" content="LUNA" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:title" content="LUNA SEN Regulator Petition — Sign & Support" />
+  <meta property="og:description" content="Support equal recognition and protection for SEN learners across the UK." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="https://example.com/site/assets/luna_og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/jpeg" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LUNA SEN Regulator Petition — Sign & Support" />
+  <meta name="twitter:description" content="Back the LUNA SEN Regulator for fair protection and recognition." />
+  <meta name="twitter:image" content="https://example.com/site/assets/luna_og.jpg" />
+  
+  <!-- Geo targeting (UK) -->
+  <meta name="geo.region" content="GB" />
+  <meta name="geo.placename" content="United Kingdom" />
+  <meta name="geo.position" content="55.3781;-3.4360" />
+  <meta name="ICBM" content="55.3781;-3.4360" />
+  
+  <!-- Freshness -->
+  <meta property="article:modified_time" content="2024-12-19T12:00:00Z" />
+  
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary: #ff69b4; /* Bolder Pink */
+      --secondary: #7ad7f0; /* Bolder Blue */
+      --bg-light: #f8fafc;
+      --bg-content-lighter-light: #ffffff;
+      --text-primary-dark: #334155;
+      --text-header-dark: #1e293b;
+      --text-secondary-dark: #64748b;
+      --border-color-light: #e2e8f0;
+      --card-shadow: rgba(0, 0, 0, 0.08);
+      --text-gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+      --button-gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+      --footer-bg-light: #f1f5f9;
+      --footer-text-primary-dark: #1e293b;
+      --footer-text-secondary-dark: #64748b;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{ 
+      background: var(--bg-light); 
+      color: var(--text-primary-dark); 
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+      line-height: 1.6;
+    }
+    .luna-gradient{ background: var(--button-gradient); }
+    
+    /* FAQ SECTION - ISOLATED STYLES */
+    .faq-card {
+      border: 1px solid var(--border-color-light); 
+      background: var(--bg-content-lighter-light); 
+      border-radius: 1rem; 
+      padding: 1rem; 
+      box-shadow: 0 2px 8px var(--card-shadow); 
+      transition: all 0.3s ease; 
+      position: relative;
+      align-self: start;
+    }
+    
+    /* Mobile responsiveness for FAQ cards */
+    @media (min-width: 768px) {
+      .faq-card {
+        padding: 1.5rem;
+      }
+    }
+    
+    /* FAQ 3-card color pattern: Pink, Gradient, Blue */
+    .faq-card:nth-child(1), .faq-card:nth-child(4) { 
+      border-top: 4px solid var(--primary); 
+    }
+    .faq-card:nth-child(2), .faq-card:nth-child(5) { 
+      border-top: 4px solid transparent; 
+      background: linear-gradient(var(--bg-content-lighter-light), var(--bg-content-lighter-light)) padding-box,
+                  var(--text-gradient) border-box;
+      border-radius: 1rem;
+    }
+    .faq-card:nth-child(3), .faq-card:nth-child(6) { 
+      border-top: 4px solid var(--secondary); 
+    }
+    
+    /* FAQ Hover effects */
+    .faq-card:nth-child(1):hover, .faq-card:nth-child(4):hover { 
+      border: 2px solid var(--primary) !important; 
+      box-shadow: 0 4px 16px rgba(255, 105, 180, 0.15); 
+      transform: translateY(-2px); 
+    }
+    .faq-card:nth-child(2):hover, .faq-card:nth-child(5):hover { 
+      background: linear-gradient(var(--bg-content-lighter-light), var(--bg-content-lighter-light)) padding-box,
+                  var(--text-gradient) border-box;
+      border: 2px solid transparent;
+      border-radius: 1rem;
+      box-shadow: 0 4px 16px rgba(122, 215, 240, 0.15); 
+      transform: translateY(-2px); 
+    }
+    .faq-card:nth-child(3):hover, .faq-card:nth-child(6):hover { 
+      border: 2px solid var(--secondary) !important; 
+      box-shadow: 0 4px 16px rgba(122, 215, 240, 0.15); 
+      transform: translateY(-2px); 
+    }
+    
+    /* FAQ Summary styling - Mobile responsive */
+    .faq-summary {
+      font-weight: 600;
+      font-size: 0.875rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+    
+    @media (min-width: 768px) {
+      .faq-summary {
+        font-size: 1rem;
+      }
+    }
+    
+    /* FAQ Content styling - Mobile responsive */
+    .faq-content {
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+      color: #374151;
+      line-height: 1.6;
+    }
+    
+    @media (min-width: 768px) {
+      .faq-content {
+        font-size: 0.875rem;
+      }
+    }
+    
+    /* Ensure sections after gradient sections have clean backgrounds */
+    #testimonials {
+      background: white !important;
+      position: relative;
+      z-index: 10;
+    }
+    footer {
+      background: black !important;
+      position: relative;
+      z-index: 10;
+    }
+    .luna-text-gradient{ background: var(--text-gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .glass{ background: rgba(255,255,255,0.75); backdrop-filter: blur(8px); border: 1px solid var(--border-color-light); }
+    .card{ 
+      border: 1px solid var(--border-color-light); 
+      background: var(--bg-content-lighter-light); 
+      border-radius: 1rem; 
+      padding: 1.5rem; 
+      box-shadow: 0 2px 8px var(--card-shadow); 
+      transition: all 0.3s ease; 
+      position: relative;
+    }
+    
+    /* LUNA 3-card color pattern: Pink, Gradient, Blue - EVIDENCE SECTION ONLY */
+    #evidence .card:nth-child(3n+1) { border-top: 4px solid var(--primary); }
+    #evidence .card:nth-child(3n+2) { 
+      border-top: 4px solid transparent; 
+      background: linear-gradient(var(--bg-content-lighter-light), var(--bg-content-lighter-light)) padding-box,
+                  var(--text-gradient) border-box;
+      border-radius: 1rem;
+    }
+    #evidence .card:nth-child(3n+3) { border-top: 4px solid var(--secondary); }
+    
+    /* LUNA 3-card color pattern: Pink, Gradient, Blue - TESTIMONIALS SECTION ONLY */
+    #testimonials figure:nth-child(3n+1),
+    #testimonials figure.hover-pink { border-top: 4px solid var(--primary); }
+    #testimonials figure:nth-child(3n+2),
+    #testimonials figure.hover-gradient { 
+      border-top: 4px solid transparent; 
+      background: linear-gradient(var(--bg-content-lighter-light), var(--bg-content-lighter-light)) padding-box,
+                  var(--text-gradient) border-box;
+      border-radius: 1rem;
+    }
+    #testimonials figure:nth-child(3n+3),
+    #testimonials figure.hover-blue { border-top: 4px solid var(--secondary); }
+    
+    /* Testimonial hover effects matching LUNA pattern */
+    #testimonials figure:nth-child(3n+1):hover,
+    #testimonials figure.hover-pink:hover { 
+      border: 2px solid var(--primary) !important; 
+      border-top: 4px solid var(--primary) !important;
+      box-shadow: 0 4px 16px rgba(255, 105, 180, 0.15); 
+      transform: translateY(-2px); 
+    }
+    #testimonials figure:nth-child(3n+2):hover,
+    #testimonials figure.hover-gradient:hover { 
+      background: linear-gradient(var(--bg-content-lighter-light), var(--bg-content-lighter-light)) padding-box,
+                  var(--text-gradient) border-box;
+      border: 2px solid transparent;
+      border-top: 4px solid transparent;
+      border-radius: 1rem;
+      box-shadow: 0 4px 16px rgba(122, 215, 240, 0.15); 
+      transform: translateY(-2px); 
+    }
+    #testimonials figure:nth-child(3n+3):hover,
+    #testimonials figure.hover-blue:hover { 
+      border: 2px solid var(--secondary) !important; 
+      border-top: 4px solid var(--secondary) !important;
+      box-shadow: 0 4px 16px rgba(122, 215, 240, 0.15); 
+      transform: translateY(-2px); 
+    }
+    
+    /* Hover effects matching LUNA pattern - EVIDENCE SECTION ONLY */
+    #evidence .card:nth-child(3n+1):hover { 
+      border: 2px solid var(--primary) !important; 
+      box-shadow: 0 4px 16px rgba(255, 105, 180, 0.15); 
+    }
+    #evidence .card:nth-child(3n+2):hover { 
+      background: linear-gradient(var(--bg-content-lighter-light), var(--bg-content-lighter-light)) padding-box,
+                  var(--text-gradient) border-box;
+      border: 2px solid transparent;
+      border-radius: 1rem;
+      box-shadow: 0 4px 16px rgba(122, 215, 240, 0.15); 
+    }
+    #evidence .card:nth-child(3n+3):hover { 
+      border: 2px solid var(--secondary) !important; 
+      box-shadow: 0 4px 16px rgba(122, 215, 240, 0.15); 
+    }
+    
+    /* Title hover effects - EVIDENCE SECTION ONLY */
+    #evidence .card:nth-child(3n+1):hover h4 { 
+      color: #ff69b4 !important; 
+      transition: color 0.3s ease !important;
+    }
+    #evidence .card:nth-child(3n+2):hover h4 { 
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important; 
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important; 
+      -webkit-text-fill-color: transparent !important;
+      background-size: 100% 100% !important;
+      background-repeat: no-repeat !important;
+      background-position: 0 0 !important;
+      transition: all 0.3s ease !important;
+    }
+    #evidence .card:nth-child(3n+3):hover h4 { 
+      color: #7ad7f0 !important; 
+      transition: color 0.3s ease !important;
+    }
+    
+    /* Download link colors - EVIDENCE SECTION ONLY - Match card border colors */
+    #evidence .card:nth-child(3n+1) a.link { 
+      color: #ff69b4 !important; 
+      text-decoration: none !important; 
+    }
+    #evidence .card:nth-child(3n+2) a.link { 
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important; 
+      -webkit-background-clip: text !important; 
+      background-clip: text !important; 
+      color: transparent !important; 
+      -webkit-text-fill-color: transparent !important;
+      background-size: 100% 100% !important;
+      background-repeat: no-repeat !important;
+      background-position: 0 0 !important;
+      display: inline-block !important;
+      text-decoration: none !important;
+    }
+    #evidence .card:nth-child(3n+3) a.link { 
+      color: #7ad7f0 !important; 
+      text-decoration: none !important; 
+    }
+    
+    /* Testimonial attribution hover effects - FORCE VIBRANT COLORS */
+    figure:nth-child(3n+1):hover figcaption,
+    figure.hover-pink:hover figcaption { 
+      color: #ff1493 !important; 
+      background: none !important; 
+      background-clip: initial !important;
+      -webkit-text-fill-color: initial !important;
+      font-weight: 900 !important;
+      opacity: 1 !important;
+    }
+    figure:nth-child(3n+2):hover figcaption,
+    figure.hover-gradient:hover figcaption { 
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+      background-size: 100% 100% !important;
+      background-repeat: no-repeat !important;
+      background-position: 0 0 !important;
+      font-weight: 900 !important;
+      display: inline-block !important;
+      opacity: 1 !important;
+    }
+    figure:nth-child(3n+3):hover figcaption,
+    figure.hover-blue:hover figcaption { 
+      color: #00bfff !important; 
+      background: none !important; 
+      background-clip: initial !important;
+      -webkit-text-fill-color: initial !important;
+      font-weight: 900 !important;
+      opacity: 1 !important;
+    }
+    
+    /* Download link colors to match card styles - Evidence section only */
+    /* Cards 1, 4, 7, 10 (pink) - div cards with a.link elements */
+    #evidence .card:nth-child(1) a.link, #evidence .card:nth-child(4) a.link, #evidence .card:nth-child(7) a.link, #evidence .card:nth-child(10) a.link { 
+      color: #ff69b4 !important; text-decoration: none !important; 
+    }
+    /* Cards 2, 5, 8, 11 (gradient) - a cards with span.link elements */
+    #evidence .card:nth-child(2) span.link, #evidence .card:nth-child(5) span.link, #evidence .card:nth-child(8) span.link, #evidence .card:nth-child(11) span.link { 
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important; 
+      -webkit-background-clip: text !important; 
+      background-clip: text !important; 
+      color: transparent !important; 
+      -webkit-text-fill-color: transparent !important;
+      text-decoration: none !important;
+    }
+    /* Card 8 also has a.link elements that need gradient */
+    #evidence .card:nth-child(8) a.link { 
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important; 
+      -webkit-background-clip: text !important; 
+      background-clip: text !important; 
+      color: transparent !important; 
+      -webkit-text-fill-color: transparent !important;
+      text-decoration: none !important;
+    }
+    /* Cards 3, 6, 9, 12 (blue) - a cards with span.link elements */
+    #evidence .card:nth-child(3) span.link, #evidence .card:nth-child(6) span.link, #evidence .card:nth-child(9) span.link, #evidence .card:nth-child(12) span.link { 
+      color: #7ad7f0 !important; text-decoration: none !important; 
+    }
+    
+    /* LUNA Header Navigation */
+    .nav-link-luna {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+    }
+    #mobileNav .nav-link-luna,
+    .mobile-nav-menu .nav-link-luna {
+      color: white !important;
+    }
+    a.nav-link-luna:hover,
+    a.nav-link-luna:active,
+    a.nav-link-luna:focus,
+    .nav-link-luna:hover,
+    .nav-link-luna:active,
+    .nav-link-luna:focus,
+    #mobileNav a.nav-link-luna:hover,
+    #mobileNav a.nav-link-luna:active,
+    #mobileNav a.nav-link-luna:focus,
+    #mobileNav nav a.nav-link-luna:hover,
+    #mobileNav nav a.nav-link-luna:active,
+    #mobileNav nav a.nav-link-luna:focus,
+    .mobile-nav-menu a.nav-link-luna:hover,
+    .mobile-nav-menu a.nav-link-luna:active,
+    .mobile-nav-menu a.nav-link-luna:focus,
+    .mobile-nav-menu nav a.nav-link-luna:hover,
+    .mobile-nav-menu nav a.nav-link-luna:active,
+    .mobile-nav-menu nav a.nav-link-luna:focus,
+    a.nav-link-luna[style*="color"]:hover,
+    a.nav-link-luna[style*="color"]:active,
+    a.nav-link-luna[style*="color"]:focus {
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      background-image: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      background-color: transparent !important;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+      text-decoration: none !important;
+    }
+    
+    /* Mobile Hamburger Menu */
+    .mobile-hamburger-btn {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 0.375rem;
+      transition: all 0.2s ease;
+    }
+    .mobile-hamburger-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    
+    /* Footer Hamburger Menu */
+    .hamburger-menu {
+      position: relative;
+      display: inline-block;
+    }
+    .hamburger-btn {
+      background: none;
+      border: none;
+      color: #64748b;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+    }
+    .hamburger-btn:hover {
+      background: rgba(100, 116, 139, 0.1);
+    }
+    .hamburger-content {
+      display: none;
+      position: absolute;
+      bottom: 100%;
+      right: 0;
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      padding: 0.5rem 0;
+      min-width: 120px;
+    }
+    .hamburger-content.show {
+      display: block;
+    }
+    .hamburger-content a {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: #64748b;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .hamburger-content a:hover {
+      background: rgba(255, 105, 180, 0.1);
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0); 
+      -webkit-background-clip: text; 
+      background-clip: text; 
+      color: transparent !important; 
+      -webkit-text-fill-color: transparent !important;
+    }
+    
+    /* Gradient text for copyright */
+    .gradient-text {
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0); 
+      -webkit-background-clip: text; 
+      background-clip: text; 
+      color: transparent !important; 
+      -webkit-text-fill-color: transparent !important;
+    }
+    
+    /* English flag styling - bubble letter effect */
+    .england-flag {
+      background: 
+        linear-gradient(90deg, #ffffff 0%, #ffffff 46%, #dc143c 46%, #dc143c 54%, #ffffff 54%, #ffffff 100%),
+        linear-gradient(0deg, #ffffff 0%, #ffffff 45%, #dc143c 45%, #dc143c 55%, #ffffff 55%, #ffffff 100%);
+      background-blend-mode: multiply;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+      font-weight: 900;
+      font-size: 1.2em;
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.9);
+      padding: 2px 4px;
+      border-radius: 4px;
+      filter: contrast(1.5) brightness(1.3) saturate(1.2);
+    }
+    
+    a.link{ color: var(--primary); text-decoration: none; transition: color 0.3s ease; }
+    a.link:hover{ color: var(--secondary); }
+    .btn-primary{ 
+      background: #7ad7f0 !important; 
+      color: white !important; 
+      padding: 0.75rem 1.5rem; 
+      border-radius: 0.75rem; 
+      font-weight: 600; 
+      border: none; 
+      transition: all 0.3s ease; 
+      text-decoration: none; 
+      display: inline-flex; 
+      align-items: center; 
+      justify-content: center; 
+      box-shadow: 0 4px 12px rgba(122, 215, 240, 0.3); 
+    }
+    .btn-primary:hover {
+      background: #7ad7f0 !important;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(122, 215, 240, 0.4);
+    }
+    .btn-header-sign{ 
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important; 
+      color: white !important; 
+      padding: 0.75rem 1.5rem; 
+      border-radius: 0.75rem; 
+      font-weight: 600; 
+      border: none; 
+      transition: all 0.3s ease; 
+      text-decoration: none; 
+      display: inline-flex; 
+      align-items: center; 
+      justify-content: center; 
+      box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3); 
+    }
+    .btn-header-sign:hover {
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+    }
+    .btn-secondary{ 
+      background: #ff69b4 !important; 
+      color: white; 
+      padding: 0.75rem 1.5rem; 
+      border-radius: 0.75rem; 
+      font-weight: 600; 
+      border: none; 
+      transition: all 0.3s ease; 
+      text-decoration: none; 
+      display: inline-flex; 
+      align-items: center; 
+      justify-content: center; 
+      box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3); 
+    }
+    .btn-secondary:hover {
+      background: #ff69b4 !important;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+    }
+    
+    /* Law and Remedy cards - 2-card pattern - ONLY for Law/Remedy section */
+    .card:nth-child(1):not(#evidence .card):not(figure.card) {
+      border-top: 4px solid #ff69b4 !important;
+    }
+
+    .card.card-2:nth-child(2):not(#evidence .card.card-2):not(figure.card.card-2) {
+      border-top: 4px solid #7ad7f0 !important;
+    }
+    .card:nth-child(2):not(#evidence .card):not(figure.card) {
+      border-top: 4px solid transparent;
+      background: linear-gradient(var(--bg-content-lighter-light), var(--bg-content-lighter-light)) padding-box,
+                  var(--text-gradient) border-box;
+      background-clip: padding-box, border-box;
+    }
+    
+    
+    /* Bullet points matching card colors - ONLY for Law/Remedy section */
+    .card:nth-child(1):not(#evidence .card):not(figure.card) ul li::marker {
+      color: #ff69b4 !important;
+    }
+    .card:nth-child(2):not(#evidence .card):not(figure.card) ul li::marker {
+      color: #7ad7f0 !important;
+    }
+    
+    /* Hover effects for 2-card pattern - ONLY for Law/Remedy section */
+    .card:nth-child(1):not(#evidence .card):not(figure.card):hover {
+      border: 2px solid #ff69b4 !important;
+      box-shadow: 0 8px 32px rgba(255, 105, 180, 0.2);
+      transform: translateY(-4px);
+    }
+    .card:nth-child(2):not(#evidence .card):not(figure.card):hover {
+      border: 2px solid #7ad7f0 !important;
+      box-shadow: 0 8px 32px rgba(122, 215, 240, 0.2);
+      transform: translateY(-4px);
+    }
+    
+    /* Title hover effects for Law/Remedy cards */
+    .card:nth-child(1):not(#evidence .card):not(figure.card):hover h3 {
+      color: #ff69b4 !important;
+      transition: color 0.3s ease !important;
+    }
+    .card:nth-child(2):not(#evidence .card):not(figure.card):hover h3 {
+      color: #7ad7f0 !important;
+      transition: color 0.3s ease !important;
+    }
+    
+    /* Petition cards - center buttons and header hover effects */
+    #petition .grid > div:nth-child(1) {
+      text-align: center;
+    }
+    #petition .grid > div:nth-child(2) {
+      text-align: center;
+    }
+    
+    /* Header hover effects matching button colors */
+    #petition .grid > div:nth-child(1):hover h4 {
+      color: #7ad7f0 !important;
+    }
+    #petition .grid > div:nth-child(3):hover h4 {
+      color: #ff69b4 !important;
+    }
+    
+    /* Timeline styling - compact and clean */
+    .timeline-container {
+      position: relative;
+      padding-left: 2rem;
+    }
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      left: 0.75rem;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, #ff69b4, #7ad7f0);
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 1.5rem;
+      padding: 0.75rem 0;
+    }
+    .timeline-marker {
+      position: absolute;
+      left: -2rem;
+      top: 0.75rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      background: #64748b;
+      border: 3px solid white;
+      box-shadow: 0 0 0 2px #e2e8f0;
+    }
+    .timeline-item:nth-child(3n+1) .timeline-marker {
+      background: #ff69b4;
+    }
+    .timeline-item:nth-child(3n+2) .timeline-marker {
+      background: var(--text-gradient);
+    }
+    .timeline-item:nth-child(3n+3) .timeline-marker {
+      background: #7ad7f0;
+    }
+    .timeline-item.highlight .timeline-marker {
+      background: #ff69b4;
+      box-shadow: 0 0 0 2px #ff69b4;
+      animation: pulse 2s infinite;
+    }
+    .timeline-content {
+      background: white;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    
+    /* Timeline cards - 3-card pattern borders */
+    .timeline-item:nth-child(3n+1) .timeline-content {
+      border-top: 4px solid #ff69b4;
+    }
+    .timeline-item:nth-child(3n+2) .timeline-content {
+      border-top: 4px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                  var(--text-gradient) border-box;
+    }
+    .timeline-item:nth-child(3n+3) .timeline-content {
+      border-top: 4px solid #7ad7f0;
+    }
+    .timeline-content:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transform: translateY(-1px);
+    }
+    .timeline-date {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+    .timeline-content h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1e293b;
+      margin-bottom: 0.25rem;
+    }
+    .timeline-content p {
+      font-size: 0.875rem;
+      color: #64748b;
+      line-height: 1.4;
+      margin: 0;
+    }
+    /* Timeline hover - override everything */
+    /* Timeline card text hover effects - 3-card pattern - MORE SPECIFIC */
+    #timeline .timeline-item:nth-child(1):hover .timeline-content h4 { 
+      color: #ff69b4 !important; 
+      background: none !important; 
+      background-clip: initial !important;
+      -webkit-text-fill-color: initial !important;
+    }
+    #timeline .timeline-item:nth-child(2):hover .timeline-content h4 { 
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+      background-size: 100% 100% !important;
+      background-repeat: no-repeat !important;
+      background-position: 0 0 !important;
+    }
+    #timeline .timeline-item:nth-child(3):hover .timeline-content h4 { 
+      color: #7ad7f0 !important; 
+      background: none !important; 
+      background-clip: initial !important;
+      -webkit-text-fill-color: initial !important;
+    }
+    #timeline .timeline-item:nth-child(4):hover .timeline-content h4 { 
+      color: #ff69b4 !important; 
+      background: none !important; 
+      background-clip: initial !important;
+      -webkit-text-fill-color: initial !important;
+    }
+    #timeline .timeline-item:nth-child(5):hover .timeline-content h4 { 
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+      background-size: 100% 100% !important;
+      background-repeat: no-repeat !important;
+      background-position: 0 0 !important;
+    }
+    #timeline .timeline-item:nth-child(6):hover .timeline-content h4 { 
+      color: #7ad7f0 !important; 
+      background: none !important; 
+      background-clip: initial !important;
+      -webkit-text-fill-color: initial !important;
+    }
+    #timeline .timeline-item:nth-child(7):hover .timeline-content h4 { 
+      color: #ff69b4 !important; 
+      background: none !important; 
+      background-clip: initial !important;
+      -webkit-text-fill-color: initial !important;
+    }
+    #timeline .timeline-item:nth-child(8):hover .timeline-content h4 { 
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+      background-size: 100% 100% !important;
+      background-repeat: no-repeat !important;
+      background-position: 0 0 !important;
+    }
+    
+    /* TIMELINE ONLY - Force gradient for cards 2, 5, 8 */
+    #timeline .timeline-item:nth-child(2):hover .timeline-content h4 { 
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+      background-size: 100% 100% !important;
+      background-repeat: no-repeat !important;
+      background-position: 0 0 !important;
+      display: inline-block !important;
+    }
+    #timeline .timeline-item:nth-child(5):hover .timeline-content h4 { 
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+      background-size: 100% 100% !important;
+      background-repeat: no-repeat !important;
+      background-position: 0 0 !important;
+      display: inline-block !important;
+    }
+    #timeline .timeline-item:nth-child(8):hover .timeline-content h4 { 
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+      background-size: 100% 100% !important;
+      background-repeat: no-repeat !important;
+      background-position: 0 0 !important;
+      display: inline-block !important;
+    }
+    
+    /* Override any conflicting card styles for timeline */
+    #timeline .timeline-item:hover .timeline-content h4 {
+      /* Reset any inherited styles */
+      background-clip: initial !important;
+      -webkit-text-fill-color: initial !important;
+    }
+    #timeline .timeline-item:nth-child(7):hover .timeline-content h4 { 
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+      background-size: 100% 100% !important;
+      background-repeat: no-repeat !important;
+      background-position: 0 0 !important;
+    }
+    #timeline .timeline-item:nth-child(8):hover .timeline-content h4 { 
+      color: #ff69b4 !important; 
+      background: none !important; 
+      background-clip: initial !important;
+      -webkit-text-fill-color: initial !important;
+    }
+    #timeline .timeline-item:nth-child(9):hover .timeline-content h4 { 
+      color: #7ad7f0 !important; 
+      background: none !important; 
+      background-clip: initial !important;
+      -webkit-text-fill-color: initial !important;
+    }
+    
+    /* Complete 3-card pattern for all timeline positions */
+    #timeline .timeline-item:nth-child(3n+1):hover .timeline-content h4 { 
+      color: #ff69b4 !important; 
+      background: none !important; 
+      background-clip: initial !important;
+      -webkit-text-fill-color: initial !important;
+    }
+    #timeline .timeline-item:nth-child(3n+2):hover .timeline-content h4 { 
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+      background-size: 100% 100% !important;
+      background-repeat: no-repeat !important;
+      background-position: 0 0 !important;
+    }
+    #timeline .timeline-item:nth-child(3n+3):hover .timeline-content h4 { 
+      color: #7ad7f0 !important; 
+      background: none !important; 
+      background-clip: initial !important;
+      -webkit-text-fill-color: initial !important;
+    }
+    .timeline-item.highlight .timeline-content {
+      border-left: none !important;
+      border-top: 4px solid #ff69b4 !important;
+      border-right: none !important;
+      border-bottom: none !important;
+      background: #fff !important;
+      box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2) !important;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+
+    
+    
+    /* Form Modal Styles for LUNA Campaign */
+    .form-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .form-modal .modal-content {
+      width: 95vw;
+      max-width: 600px;
+      max-height: 95vh;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 0 0 3px transparent;
+      background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(135deg, #ff69b4, #7ad7f0);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      color: #333333;
+      flex-direction: column;
+      overflow-y: auto;
+      position: relative;
+    }
+    
+    @media (max-width: 768px) {
+      .form-modal .modal-content {
+        width: 98vw;
+        max-height: 98vh;
+        margin: 1vh;
+      }
+    }
+    
+    /* Gradient checkbox styling */
+    .form-modal input[type="checkbox"] {
+      appearance: none !important;
+      -webkit-appearance: none !important;
+      width: 20px;
+      height: 20px;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      background: white;
+      background-image: linear-gradient(white, white), linear-gradient(135deg, #ff69b4, #7ad7f0);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      position: relative;
+      cursor: pointer;
+    }
+    
+    .form-modal input[type="checkbox"]:checked {
+      background-image: linear-gradient(135deg, #ff69b4, #7ad7f0), linear-gradient(135deg, #ff69b4, #7ad7f0) !important;
+      background-origin: border-box !important;
+      background-clip: content-box, border-box !important;
+      border: 2px solid transparent !important;
+      box-shadow: none !important;
+    }
+    
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .form-modal input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+      }
+    }
+    
+    .form-modal input[type="checkbox"]:checked::after {
+      content: '✓';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    
+    .form-modal input[type="checkbox"]:focus {
+      box-shadow: 0 0 0 2px #ff69b4, 0 0 0 4px #7ad7f0;
+    }
+    
+    .form-modal.show {
+      display: flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+    
+    .form-modal .modal-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    
+    .form-modal .form-modal-header {
+      background: #000000;
+      color: #ffffff;
+      padding: 1rem 1.25rem;
+      border-radius: 16px 16px 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .form-modal .form-modal-header h3 {
+      margin: 0;
+      color: #ffffff;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    
+    .form-modal .form-modal-header h3 .luna-text-gradient {
+      font-weight: 700;
+    }
+    
+    .form-modal .form-modal-header .close-btn {
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0);
+      border: none;
+      color: #ffffff;
+      font-size: 1.25rem;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .form-modal .form-modal-header .close-btn:hover {
+      background: linear-gradient(135deg, #ff69b4, #7ad7f0);
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+    
+    .form-modal .form-modal-header .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .form-modal .form-modal-content {
+      flex: 1;
+      overflow: visible;
+      padding: 0;
+    }
+    
+    /* Form field focus states with proper gradient order */
+    .form-modal input:focus,
+    .form-modal select:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #ff69b4, 0 0 0 4px #7ad7f0;
+      border-color: transparent;
+    }
+    
+    /* Testimonial carousel animation */
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    
+    @keyframes scroll-mobile {
+      0% { transform: translateX(0); }
+      33.33% { transform: translateX(-100%); }
+      66.66% { transform: translateX(-200%); }
+      100% { transform: translateX(-300%); }
+    }
+    
+    .animate-scroll {
+      animation: scroll 30s linear infinite;
+    }
+    
+    @media (max-width: 768px) {
+      .animate-scroll {
+        animation: scroll-mobile 18s ease-in-out infinite;
+      }
+    }
+    
+    .testimonial-carousel:hover .animate-scroll {
+      animation-play-state: paused;
+    }
+    
+    
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- HEADER NAVIGATION -->
+  <header id="header-nav" class="bg-black w-full">
+    <!-- Mobile Header -->
+    <div class="md:hidden">
+      <div class="px-4 py-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2 pl-1">
+            <img src="./assets/Luna-logo.png" alt="LUNA Logo" class="h-6 w-6 object-contain" loading="eager" />
+            <div>
+              <h1 class="text-sm font-bold text-white"><span class="luna-text-gradient">LUNA</span> <span class="text-white">SEN Regulator Petition</span></h1>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <a href="#petition" class="bg-gradient-to-r from-[#ff69b4] to-[#7ad7f0] text-white text-xs font-semibold px-3 py-1.5 rounded-lg text-center hover:from-[#ff69b4] hover:to-[#7ad7f0]">Sign</a>
+            <button class="mobile-hamburger-btn text-white" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+      <!-- Mobile Navigation Menu -->
+      <div id="mobileNav" class="mobile-nav-menu hidden md:hidden bg-black">
+        <nav class="px-4 py-2">
+          <a href="#evidence" onclick="toggleMobileMenu()" class="nav-link-luna block py-3 text-base font-medium border-b border-white/20 transition-all duration-300" style="color: white !important;">Evidence</a>
+          <a href="#petition" onclick="toggleMobileMenu()" class="nav-link-luna block py-3 text-base font-medium border-b border-white/20 transition-all duration-300" style="color: white !important;">Petition</a>
+          <a href="./privacy.html" onclick="toggleMobileMenu()" class="nav-link-luna block py-3 text-base font-medium border-b border-white/20 transition-all duration-300" style="color: white !important;">Privacy</a>
+        </nav>
+      </div>
+
+    <!-- Desktop Header -->
+    <div class="hidden md:block w-full py-4">
+      <div class="flex items-center justify-between gap-4 w-full">
+        <div class="flex items-center gap-3 flex-shrink-0 pl-4" style="margin-left: 0;">
+          <img src="./assets/Luna-logo.png" alt="LUNA Logo" class="h-10 w-10 object-contain flex-shrink-0" style="margin-left: 0 !important;" loading="eager" />
+          <div>
+            <h1 class="text-lg font-extrabold tracking-tight text-white"><span class="luna-text-gradient">LUNA</span> <span class="text-white">SEN Regulator Petition</span></h1>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 flex-shrink-0 pr-6">
+          <nav class="flex gap-6">
+            <a href="#evidence" class="nav-link-luna text-lg font-medium transition-all duration-300" style="color: white;">Evidence</a>
+            <a href="#petition" class="nav-link-luna text-lg font-medium transition-all duration-300" style="color: white;">Petition</a>
+            <a href="./privacy.html" class="nav-link-luna text-lg font-medium transition-all duration-300" style="color: white;">Privacy</a>
+          </nav>
+          <a href="#petition" class="btn-header-sign text-center text-lg px-5 py-3 font-semibold">Sign the petitions</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="luna-gradient">
+    <!-- Hero Content -->
+    <div class="px-4 md:px-0 grid md:grid-cols-2 gap-6 md:gap-8 items-center text-center mb-8 relative pt-10">
+        <!-- Share Button - Top Right of Hero Section -->
+        <button id="shareButton" class="absolute top-4 right-4 md:top-6 md:right-6 bg-black rounded-full p-2 md:p-3 hover:bg-black/90 transition-all duration-300 z-10" title="Share this petition">
+          <svg class="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 20 20">
+            <defs>
+              <linearGradient id="shareGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#7ad7f0;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3 3 0 000-1.318l4.94-2.47A3 3 0 0015 8z" fill="url(#shareGradient)"/>
+          </svg>
+        </button>
+        <div style="color: white;" class="text-center px-2 md:px-8">
+          <h2 class="text-4xl md:text-5xl font-black leading-tight drop-shadow-lg">
+            Ofqual's Own Lawyers: <span class="text-red-500 font-black">"We Don't Do SEN!"</span>
+          </h2>
+          
+          <p class="mt-6 text-lg leading-relaxed font-black">
+            Their own legal team confirmed: <strong class="text-black font-black">"Ofqual has no duties under Part 3 of the Children and Families Act 2014"</strong> and <strong class="text-black font-black">"the SEND Code of Practice does not apply to Ofqual"</strong>. 
+            <br><br>
+            Despite ministerial claims that "Ofqual can oversee SEN qualifications," their solicitors have now legally confirmed: the Regulated Qualifications Framework was <strong class="text-black font-black">never designed for SEN/EHCP learners</strong>.
+            <br><br>
+            Every day without LUNA SEN Regulator, children with autism, ADHD, dyslexia, and other needs are forced into a system that admits it wasn't designed for them. <strong class="text-black font-black">This isn't about "reasonable adjustments" - it's about fundamental design failure that's destroying futures daily.</strong>
+            <br><br>
+            <div class="bg-black rounded-lg p-3 md:p-4 text-center max-w-2xl mx-auto">
+              <strong class=" font-black text-base md:text-lg">Your signature tells ministers:<br>"Stop failing our children who have SEN/EHCP."</strong>
+              <br><br>
+              <strong class=" font-black text-base md:text-lg">"<span style="color: var(--primary)">Recognise</span>, <span class="luna-text-gradient">authorise</span> and <span style="color: var(--secondary)">implement</span>"</strong>
+              <br>
+              <strong class=" font-black text-base md:text-lg"><span class="luna-text-gradient">LUNA</span> SEN Regulator - we are the solution <span class="england-flag">England</span> desperately needs."</strong>
+            </div>
+          </p>
+          
+          <div class="mt-8 mb-6 flex flex-col sm:flex-row gap-3 justify-center items-center px-4">
+            <a href="#evidence" class="btn-secondary w-full sm:w-auto text-center">See the evidence</a>
+            <a href="#petition" class="btn-primary w-full sm:w-auto text-center">Add your name</a>
+          </div>
+          
+        </div>
+        
+        <div class="glass rounded-3xl p-4 md:p-8 shadow-xl border border-white/40 text-slate-900 text-center mb-8 md:mb-0 mx-4 md:mx-4">
+          <blockquote class="text-xl md:text-3xl font-semibold leading-relaxed">
+            "The RQF was <span class="text-red-600">not designed or structured</span> for learners with special educational needs and disabilities (SEND) or SEN/EHCP learners with Education, Health and Care Plans (EHCPs)."
+          </blockquote>
+          <p class="mt-3 text-sm md:text-base text-slate-700 font-medium">
+            — Ofqual's Legal Team (Gowling WLG), Official Response, 19 Sept 2025
+          </p>
+          <div class="mt-4 md:mt-6 p-3 md:p-4 bg-gradient-to-r from-pink-50 to-blue-50 rounded-lg" style="border: 2px solid; border-image: linear-gradient(135deg, #ff69b4, #7ad7f0) 1;">
+            <p class="text-slate-800 font-semibold text-sm md:text-base">
+              We demand government <span style="color: var(--primary)">recognition</span>, <span class="luna-text-gradient">authorisation</span>, and <span style="color: var(--secondary)">implementation</span> of the <strong><span class="luna-text-gradient">LUNA</span> SEN Regulator</strong> as England's official SEN regulator - working parallel to Ofqual with the <strong>SRQF (SEN Regulated Qualifications Framework)</strong> designed specifically for SEN/EHCP learners ages 5-25.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAW + SOLUTION -->
+  <section class="py-12 bg-slate-50">
+    <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-8">
+      <div class="card">
+        <h3 class="text-2xl font-extrabold text-center">The law engaged</h3>
+        <ul class="mt-3 list-disc pl-6 space-y-2">
+          <li><strong><strong>Children & Families Act 2014 Part 3:</strong></strong> SEN/EHCP legal duties unfulfilled for 10+ years since RQF implementation (2015).</li>
+          <li><strong><strong>Equality Act 2010:</strong></strong> Section 19 (sustained indirect discrimination), Section 149 (ongoing Public Sector Equality Duty breach).</li>
+          <li><strong><strong>SEND Code of Practice:</strong></strong> Statutory guidance not enforced for SEN learners for over a decade.</li>
+          <li><strong><strong>Human Rights Act 1998:</strong></strong> Protocol 1 Article 2 (ongoing breach of right to education), Article 14 (sustained discrimination).</li>
+          <li><strong><strong>UNCRPD Article 24:</strong></strong> Persistent failure to provide inclusive education system for 10+ years.</li>
+        </ul>
+      </div>
+      <div class="card card-2">
+        <h3 class="text-2xl font-extrabold text-center">The remedy</h3>
+        <ul class="mt-3 list-disc pl-6 space-y-2">
+          <li><strong style="color: var(--primary)">Recognise</strong> the LUNA SEN Regulator as England's official SEN regulator.</li>
+          <li><strong class="luna-text-gradient">Authorise</strong> the LUNA SEN Regulator to operate parallel to Ofqual.</li>
+          <li><strong style="color: var(--secondary)">Implement</strong> the SEN Regulated Qualifications Framework (SRQF) designed specifically for SEN/EHCP learners ages 5-25.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PETITION -->
+  <section id="petition" class="">
+    <div class="mx-auto max-w-5xl px-6 text-center">
+      <h3 class="text-3xl md:text-4xl font-extrabold">Add your name  two quick steps</h3>
+      <p class="mt-12 text-lg max-w-3xl mx-auto">
+        <strong>Step 1:</strong> Sign the Parliament petition <strong style="color: var(--primary)">(this is what ministers count)</strong>
+        <br>
+        <strong>Step 2:</strong> Join the LUNA campaign <strong style="color: var(--secondary)">(this helps us show local support to MPs)</strong>
+      </p>
+      <div class="mt-4 p-6 bg-black rounded-2xl max-w-4xl mx-auto shadow-lg">
+        <p class=" text-base" style="color: white;">
+          <strong class="luna-text-gradient">Important:</strong> <strong>After signing the Parliament petition, check your email and click the confirmation link.</strong>
+        </p>
+        <p class="text-center mt-3 text-lg font-bold luna-text-gradient animate-pulse">
+          Your signature won't count until you confirm.
+        </p>
+      </div>
+
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
+        <div class="rounded-2xl bg-white text-slate-900 p-6 shadow">
+          <h4 class="text-xl font-bold">1) Parliament petition (required)</h4>
+          <p class="mt-2 text-sm">Triggers a Government response and may lead to debate. Your signature is recorded publicly by Parliament.</p>
+          <a href="#petition" onclick="alert('Parliament petition link will be added once petition is created')" class="mt-4 btn-primary text-center">Sign on petition.parliament.uk</a>
+        </div>
+        <div class="rounded-2xl bg-black text-white p-6 shadow-lg flex flex-col justify-center items-center">
+          <h4 class="text-xl font-bold text-center luna-text-gradient">Latest Petition Count</h4>
+          <div class="mt-4 text-center">
+            <div class="text-3xl font-bold text-white"><span id="parl-count"></span></div>
+            <p class="text-sm opacity-90 mt-2">Signatures on petition.parliament.uk</p>
+          </div>
+        </div>
+        <div class="rounded-2xl bg-white text-slate-900 p-6 shadow">
+          <h4 class="text-xl font-bold">2) LUNA campaign sign-up (optional but helpful)</h4>
+          <p class="mt-2 text-sm">Lets us present constituency-level evidence to MPs and keep supporters updated. <strong>Not</strong> a substitute for the Parliament petition.</p>
+          <a href="#petition" onclick="openCampaignModal(); return false;" class="mt-4 btn-secondary">Join campaign updates</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EVIDENCE -->
+  <section id="evidence" class="py-14">
+    <div class="mx-auto max-w-6xl px-5">
+      <h3 class="text-3xl md:text-4xl font-extrabold text-center">Evidence</h3>
+    
+
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- ESSENTIAL LEGAL EVIDENCE - Complete legal journey -->
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">1. Initial MP Approach</h4>
+          <p class="mt-2 text-slate-700 text-center">First approach to Justin Madders MP regarding LUNA SEN qualifications framework (June 2025).</p>
+          <div class="mt-4 text-center">
+            <a href="docs/Gmail%20-%20(Case%20Ref_%20ZA65398)%20Redacted_redacted.pdf" class="text-sm font-semibold link" target="_blank">View MP Email Thread PDF →</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">2. Minister of Education Proposal</h4>
+          <p class="mt-2 text-slate-700 text-center">Formal proposal submitted to Gillian Keegan (Secretary of State for Education) and her staff regarding LUNA SEN qualifications framework (June 2025).</p>
+          <div class="mt-4 text-center">
+            <a href="docs/proposal-minister-education(2)_redacted (1).pdf" class="text-sm font-semibold link" target="_blank">View Minister Proposal PDF →</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">3. Justin's Letter to Minister of Education</h4>
+          <p class="mt-2 text-slate-700 text-center">Justin Madders MP's letter to Catherine McKinell (Minister of Education) regarding your LUNA SEN qualifications proposal (June 2025).</p>
+          <div class="mt-4 text-center">
+            <a href="docs/letter44404_redacted_redacted.pdf" class="text-sm font-semibold link" target="_blank">View Justin's Letter PDF →</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">4. Ofqual RQF Enquiry</h4>
+          <p class="mt-2 text-slate-700 text-center">Initial email correspondence with Kirsty at Ofqual regarding RQF enquiries for SEN learners (July 2025).</p>
+          <div class="mt-4 text-center">
+            <a href="docs/Gmail%204-%20OFQ0019830_redacted.pdf" class="text-sm font-semibold link" target="_blank">View Ofqual Correspondence PDF →</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">5. Catherine McKinell's Reply</h4>
+          <p class="mt-2 text-slate-700 text-center">Catherine McKinell MP's response to Justin's letter directing back to Ofqual, showing proper channels were attempted (August 2025).</p>
+          <div class="mt-4 text-center">
+            <a href="docs/2025-0028093%20-%20Justin%20Madders%20MP%20-%20Signed%20(2)_redacted_redacted%20(2).pdf" class="text-sm font-semibold link" target="_blank">View Catherine McKinell Reply PDF →</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">6. Ofqual Correspondence with Hannah</h4>
+          <p class="mt-2 text-slate-700 text-center">Complete correspondence sequence with Hannah from Ofqual showing automated reply followed by human response, demonstrating inability to answer binary questions (August 2025).</p>
+          <div class="mt-4 text-center">
+            <a href="docs/Gmail%20-%20Ofqual%20enquiry1_redacted.pdf" class="text-sm font-semibold link" target="_blank">View Ofqual Correspondence PDF →</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">7. Pre-Action Protocol Letter</h4>
+          <p class="mt-2 text-slate-700 text-center">Formal legal letter before claim documenting Ofqual's failure to provide SEN RQF pathway (12 Sept 2025).</p>
+          <div class="mt-4 text-center">
+            <a href="docs/Gmail%20-%20Pre-Action%20Protocol%20Letter%20Before%20Claim%20%E2%80%93%20Ofqual%E2%80%99s%20Failure%20to%20Provide%20a%20SEN%20RQF%20Pathway_redacted_redacted.pdf" class="text-sm font-semibold link" target="_blank">View PAP Letter PDF →</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">8. Ofqual's Solicitor Response</h4>
+          <p class="mt-2 text-slate-700 text-center">Ofqual's legal response via Gowling WLG solicitors confirming "The answer is no" RQF was not designed/structured for SEN/EHCP learners(19 Sept 2025).</p>
+          <div class="mt-4 text-center">
+            <a href="docs/Ofqual Solicator Response-NO-SEN.pdf" class="text-sm font-semibold link" target="_blank">View Ofqual Solicitor Response PDF →</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">9. LUNA Annex A Briefing</h4>
+          <p class="mt-2 text-slate-700 text-center">LUNA Annex A Briefing document sent to Justin Madders MP after Ofqual's solicitor response, outlining the SEN qualifications framework proposal and legal basis (September 2025).</p>
+          <div class="mt-4 text-center space-y-2">
+            <div>
+              <a href="docs/LUNA_Annex_A_Briefing_v2%20(4)_redacted_redacted.pdf" class="text-sm font-semibold link" target="_blank">View LUNA Annex A Briefing PDF →</a>
+            </div>
+            <div>
+              <a href="docs/Gmail%20-%20MP-%20ANNEX%20A_redacted.pdf" class="text-sm font-semibold link" target="_blank">View Email Thread with Annex A →</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">10. Justin Madders MP Final Response</h4>
+          <p class="mt-2 text-slate-700 text-center">Justin Madders MP's final response after reviewing Ofqual's legal letter and LUNA Annex A Briefing (25 Sept 2025).</p>
+          <div class="mt-4 text-center">
+            <a href="docs/Gmail%20-%20Email%202%20from%20Justin%20Madders%20MP%20re_%20Government%20Ministers%20and%20Ofqal%20(Case%20Ref_%20ZA65398)_redacted_redacted.pdf" class="text-sm font-semibold link" target="_blank">View Justin's Final Response PDF →</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline" class="py-12 bg-slate-50">
+    <div class="mx-auto max-w-4xl px-6">
+      <h3 class="text-3xl md:text-4xl font-extrabold text-center mb-8">Timeline (June–Sept 2025)</h3>
+      
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">June 2025</div>
+            <h4>Initial MP Approach</h4>
+            <p>First approach to Justin Madders MP regarding LUNA SEN qualifications framework</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">June 2025</div>
+            <h4>Minister of Education Proposal</h4>
+            <p>Formal proposal submitted to Gillian Keegan (Secretary of State for Education) and her staff regarding LUNA SEN qualifications framework</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">July 2025</div>
+            <h4>Ofqual RQF Enquiry</h4>
+            <p>Initial email correspondence with Hannah at Ofqual regarding RQF enquiries for SEN learners</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">August 2025</div>
+            <h4>Ofqual Correspondence with Hannah</h4>
+            <p>Complete correspondence sequence with Hannah from Ofqual showing automated reply followed by human response, demonstrating inability to answer binary questions</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">12 Sept 2025</div>
+            <h4>Pre-Action Protocol Letter</h4>
+            <p>Formal legal letter before claim documenting Ofqual's failure to provide SEN RQF pathway</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">19 Sept 2025</div>
+            <h4>Ofqual's Solicitor Response</h4>
+            <p>Ofqual's legal response via Gowling WLG solicitors confirming "The answer is no" - RQF was not designed/structured for SEN/EHCP learners</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">September 2025</div>
+            <h4>LUNA Annex A Briefing</h4>
+            <p>LUNA Annex A Briefing document sent to Justin Madders MP after Ofqual's solicitor response, outlining the SEN qualifications framework proposal and legal basis</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">25 Sept 2025</div>
+            <h4>Justin Madders MP Final Response</h4>
+            <p>Justin Madders MP's final response after reviewing Ofqual's legal letter and LUNA Annex A Briefing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-12 bg-white">
+    <div class="mx-auto max-w-6xl px-6">
+      <h3 class="text-3xl md:text-4xl font-extrabold text-center">Voices from the <span class="luna-text-gradient">Community</span></h3>
+      
+      <!-- Auto-scrolling testimonials carousel -->
+      <div class="mt-8 overflow-hidden">
+        <div class="testimonial-carousel flex animate-scroll gap-4 md:gap-6">
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"My child has an EHCP but no pathway that fits. Adjustments are not the same as a designed framework."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Parent</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"We need qualifications mapped to EHCP outcomes, not after-the-fact accommodations."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> SENCo</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"SRQF would give employers clarity and young people a fair route into work."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Employer</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"The current system fails our children daily. We need LUNA SEN Regulator now."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Parent</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"As a teacher, I see students struggle with qualifications not designed for their needs."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Teacher</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"LUNA SEN Regulator would transform how we support SEN learners in our college."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> College Staff</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"My daughter deserves qualifications that recognize her abilities, not her disabilities."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Parent</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"The RQF gap is real. We need SRQF for proper SEN qualifications framework."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Local Authority</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"Our school desperately needs proper SEN qualifications that actually work for our students."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Headteacher</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"The current system is broken. LUNA SEN Regulator is the solution we've been waiting for."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> SEN Parent</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"My son has autism and the current qualifications don't reflect his true abilities."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Parent</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"We need a regulator that understands SEN learners, not just mainstream education."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> SENCo</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"Employers need clarity on what SEN qualifications actually mean in practice."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> HR Manager</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"The EHCP process is broken. We need proper qualifications that match the plans."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Parent</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"Students with ADHD deserve qualifications that recognize their unique strengths."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Teacher</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"Our college struggles to find appropriate qualifications for SEN students."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> College Principal</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"The RQF system excludes our most vulnerable learners. This must change."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Local Authority</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"LUNA SEN Regulator would give our students the recognition they deserve."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Headteacher</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"My daughter with dyslexia needs qualifications that show her true potential."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Parent</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"The current system fails SEN learners daily. We need LUNA now."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> SEN Parent</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"Qualifications should be designed for SEN learners, not adapted afterwards."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> SENCo</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"Employers want to hire SEN talent but need clear qualification standards."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Employer</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"Our school needs qualifications that actually work for our SEN students."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Deputy Head</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"The SRQF framework would transform how we support SEN learners."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> College Staff</figcaption>
+          </figure>
+          <!-- Duplicate for seamless loop -->
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"My child has an EHCP but no pathway that fits. Adjustments are not the same as a designed framework."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Parent</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"We need qualifications mapped to EHCP outcomes, not after-the-fact accommodations."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> SENCo</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"SRQF would give employers clarity and young people a fair route into work."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Employer</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"The current system fails our children daily. We need LUNA SEN Regulator now."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Parent</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"As a teacher, I see students struggle with qualifications not designed for their needs."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Teacher</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"LUNA SEN Regulator would transform how we support SEN learners in our college."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> College Staff</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"My daughter deserves qualifications that recognize her abilities, not her disabilities."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Parent</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"The RQF gap is real. We need SRQF for proper SEN qualifications framework."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Local Authority</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"Our school desperately needs proper SEN qualifications that actually work for our students."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Headteacher</figcaption>
+          </figure>
+          <figure class="card flex-shrink-0 w-full md:w-1/3">
+            <blockquote class="text-sm md:text-base">"The current system is broken. LUNA SEN Regulator is the solution we've been waiting for."</blockquote>
+            <figcaption class="mt-3 text-xs md:text-sm opacity-70"> SEN Parent</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-8 md:py-12 bg-slate-50">
+    <div class="mx-auto max-w-3xl px-4 md:px-6">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-center mb-6 md:mb-8">Frequently Asked <span class="luna-text-gradient">Questions</span></h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 items-start">
+        <details class="faq-card">
+          <summary class="faq-summary">
+            <span>What is the LUNA SEN Regulator?</span>
+            <span class="text-xl md:text-2xl">+</span>
+          </summary>
+          <div class="faq-content">
+            It's a proposal to close the regulation gap for SEND learners in the UK so neurodiverse children are recognised, protected, and given equal opportunities.
+          </div>
+        </details>
+        
+        <details class="faq-card">
+          <summary class="faq-summary">
+            <span>Who can sign this petition?</span>
+            <span class="text-xl md:text-2xl">+</span>
+          </summary>
+          <div class="faq-content">
+            Anyone who supports fair protection and recognition for SEND learners across the UK - parents, teachers, employers, and community members.
+          </div>
+        </details>
+        
+        <details class="faq-card">
+          <summary class="faq-summary">
+            <span>How will my details be used?</span>
+            <span class="text-xl md:text-2xl">+</span>
+          </summary>
+          <div class="faq-content">
+            Only to record your support and, if you consent, to send campaign updates. See our
+            <a href="https://example.com/privacy.html" class="underline">Privacy Notice</a> for full details.
+          </div>
+        </details>
+        
+        <details class="faq-card">
+          <summary class="faq-summary">
+            <span>What is the SRQF?</span>
+            <span class="text-xl md:text-2xl">+</span>
+          </summary>
+          <div class="faq-content">
+            The Specialist SEN Qualifications Framework - a dedicated regulatory system designed specifically for neurodiverse learners, unlike the current RQF which wasn't built for SEN needs.
+          </div>
+        </details>
+        
+        <details class="faq-card">
+          <summary class="faq-summary">
+            <span>Why is this important now?</span>
+            <span class="text-xl md:text-2xl">+</span>
+          </summary>
+          <div class="faq-content">
+            Ofqual's own solicitors confirmed the RQF wasn't designed for SEN learners. This creates a fundamental gap that's destroying futures daily. We need proper recognition now.
+          </div>
+        </details>
+        
+        <details class="faq-card">
+          <summary class="faq-summary">
+            <span>What happens after I sign?</span>
+            <span class="text-xl md:text-2xl">+</span>
+          </summary>
+          <div class="faq-content">
+            Your signature helps build momentum for the campaign. We'll keep you updated on progress and may contact you about further actions to support the LUNA SEN Regulator.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"What is the LUNA SEN Regulator?",
+       "acceptedAnswer":{"@type":"Answer","text":"It's a proposal to close the regulation gap for SEND learners in the UK so neurodiverse children are recognised, protected, and given equal opportunities."}},
+      {"@type":"Question","name":"Who can sign this petition?",
+       "acceptedAnswer":{"@type":"Answer","text":"Anyone who supports fair protection and recognition for SEND learners across the UK - parents, teachers, employers, and community members."}},
+      {"@type":"Question","name":"How will my details be used?",
+       "acceptedAnswer":{"@type":"Answer","text":"Only to record your support and, if you consent, to send campaign updates, as described in our Privacy Notice."}},
+      {"@type":"Question","name":"What is the SRQF?",
+       "acceptedAnswer":{"@type":"Answer","text":"The Specialist SEN Qualifications Framework - a dedicated regulatory system designed specifically for neurodiverse learners, unlike the current RQF which wasn't built for SEN needs."}},
+      {"@type":"Question","name":"Why is this important now?",
+       "acceptedAnswer":{"@type":"Answer","text":"Ofqual's own solicitors confirmed the RQF wasn't designed for SEN learners. This creates a fundamental gap that's destroying futures daily. We need proper recognition now."}},
+      {"@type":"Question","name":"What happens after I sign?",
+       "acceptedAnswer":{"@type":"Answer","text":"Your signature helps build momentum for the campaign. We'll keep you updated on progress and may contact you about further actions to support the LUNA SEN Regulator."}}
+    ]
+  }
+  </script>
+
+  <!-- FOOTER -->
+  <footer class="bg-black" style="padding: 20px 0;">
+    <div class="mx-auto max-w-6xl px-6 text-sm text-white">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-2">
+          <p class="text-center md:text-left">Copyright © 2025 <span class="gradient-text">LUNA</span> SEN Regulator - All Rights Reserved.</p>
+       
+      </div>
+    </div>
+  </footer>
+
+  <!-- LUNA Campaign Sign-up Modal -->
+  <div class="form-modal" id="campaignModal" onclick="closeCampaignModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="form-modal-header">
+        <h3>Join <span class="luna-text-gradient">LUNA</span> Campaign</h3>
+        <div class="header-controls">
+          <button class="close-btn" onclick="closeCampaignModal()">×</button>
+        </div>
+      </div>
+      
+      <div class="form-modal-content">
+        <form id="campaignForm" class="space-y-4 p-4">
+          <div class="form-group">
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+            <input type="text" name="name" required class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300">
+          </div>
+          
+          <div class="form-group">
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+            <input type="email" name="email" required class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300">
+          </div>
+          
+          <div class="form-group">
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Postcode *</label>
+            <input type="text" name="postcode" required class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300" placeholder="e.g. CH1 1AA">
+          </div>
+          
+          <div class="form-group">
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Your Role</label>
+            <select name="role" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300">
+              <option value="">Select your role</option>
+              <option value="parent">Parent</option>
+              <option value="young-person">Young Person</option>
+              <option value="senco">SENCo</option>
+              <option value="teacher">Teacher</option>
+              <option value="local-authority">Local Authority</option>
+              <option value="employer">Employer</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label class="block text-sm font-semibold text-gray-700 mb-2">Your Voice (Optional)</label>
+            <textarea name="yourVoice" rows="3" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300" placeholder="Share your thoughts about SEN qualifications and LUNA SEN Regulator..."></textarea>
+            <p class="text-xs text-gray-500 mt-1">
+              <strong>Note:</strong> All submissions are automatically moderated. Content containing inappropriate language, spam, or irrelevant material will be rejected. Please keep your message relevant to SEN qualifications and LUNA SEN Regulator.
+            </p>
+          </div>
+          
+          <div class="space-y-3">
+            <label class="flex items-start space-x-3">
+              <input type="checkbox" name="gdpr" required class="mt-1 h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 bg-white rounded">
+              <span class="text-sm text-gray-700">I'd like to receive campaign updates and help present evidence to MPs. I can unsubscribe anytime. *</span>
+            </label>
+            
+            <label class="flex items-start space-x-3">
+              <input type="checkbox" name="newsletter" class="mt-1 h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 bg-white rounded">
+              <span class="text-sm text-gray-700">I'd like to receive updates about <span class="luna-text-gradient">LUNA</span> SEN Regulator progress and developments.</span>
+            </label>
+          </div>
+          
+          <div class="pt-4">
+            <button type="submit" class="w-full bg-gradient-to-r from-[#ff69b4] to-[#7ad7f0]  font-semibold py-3 px-6 rounded-lg hover:from-[#ff69b4] hover:to-[#7ad7f0] transition-all duration-300 transform hover:scale-105">Join LUNA Campaign</button>
+          </div>
+          
+          <p class="text-xs text-gray-500 text-center">
+            <strong class="luna-text-gradient">Remember:</strong> This is supplementary to signing the official Parliament petition.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Manual tally until backend exists -->
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileNav');
+      if (menu) {
+        menu.classList.toggle('hidden');
+      }
+    }
+    
+    function toggleHamburger() {
+      const content = document.getElementById('hamburgerContent');
+      content.classList.toggle('show');
+    }
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const mobileNav = document.getElementById('mobileNav');
+      const hamburgerBtn = document.querySelector('.mobile-hamburger-btn');
+      const hamburger = document.querySelector('.hamburger-menu');
+      const hamburgerContent = document.getElementById('hamburgerContent');
+      
+      // Close mobile navigation menu if clicking outside
+      if (mobileNav && !mobileNav.classList.contains('hidden')) {
+        if (hamburgerBtn && !hamburgerBtn.contains(event.target) && !mobileNav.contains(event.target)) {
+          mobileNav.classList.add('hidden');
+        }
+      }
+      
+      // Close footer hamburger when clicking outside
+      if (hamburger && hamburgerContent && !hamburger.contains(event.target)) {
+        hamburgerContent.classList.remove('show');
+      }
+      
+      // Close campaign modal when clicking outside (on backdrop)
+      const campaignModal = document.getElementById('campaignModal');
+      if (campaignModal && campaignModal.classList.contains('show')) {
+        const modalContent = campaignModal.querySelector('.form-modal-content');
+        if (modalContent && !modalContent.contains(event.target)) {
+          closeCampaignModal();
+        }
+      }
+    });
+    
+    // Campaign modal functions (Form Modal Style)
+    function openCampaignModal() {
+      const modal = document.getElementById('campaignModal');
+      if (modal) {
+        modal.classList.add('show');
+      }
+    }
+    
+    function closeCampaignModal() {
+      document.getElementById('campaignModal').classList.remove('show');
+    }
+    
+
+    // Make functions globally accessible
+    window.openCampaignModal = openCampaignModal;
+    window.closeCampaignModal = closeCampaignModal;
+    
+    function showSuccessMessage() {
+      // Create success message element
+      const successMessage = document.createElement('div');
+      successMessage.innerHTML = `
+        <div style="
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: linear-gradient(135deg, #ff69b4, #7ad7f0);
+          color: white;
+          padding: 2rem;
+          border-radius: 1rem;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+          z-index: 10000;
+          text-align: center;
+          max-width: 400px;
+          font-family: 'Roboto', sans-serif;
+        ">
+          <h3 style="margin: 0 0 1rem 0; font-size: 1.5rem; font-weight: bold;">
+            Thank you for supporting LUNA SEN Regulator! 🌟
+          </h3>
+          <p style="margin: 0; font-size: 1rem; line-height: 1.4;">
+            Your support has been recorded. We'll keep you updated on our campaign progress and present your constituency-level evidence to MPs.
+          </p>
+        </div>
+      `;
+      
+      // Add to page
+      document.body.appendChild(successMessage);
+      
+      // Remove after 4 seconds
+      setTimeout(() => {
+        successMessage.remove();
+      }, 4000);
+    }
+    
+    // Close modal when clicking outside
+    document.getElementById('campaignModal').addEventListener('click', function(event) {
+      if (event.target === this) {
+        closeCampaignModal();
+      }
+    });
+    
+    // Content moderation function
+    function moderateContent(text) {
+      const offensiveWords = [
+        'hate', 'stupid', 'idiot', 'moron', 'damn', 'hell', 'crap', 'sucks',
+        'bullshit', 'fuck', 'shit', 'bitch', 'asshole', 'dick', 'piss',
+        'bloody', 'bugger', 'sod', 'twat', 'wanker', 'bastard', 'cunt'
+      ];
+      
+      const inappropriatePatterns = [
+        /(.)\1{3,}/g, // Repeated characters (like "aaaa")
+        /[A-Z]{5,}/g, // Excessive caps
+        /[!]{3,}/g,   // Excessive exclamation marks
+        /spam|advert|promo|buy now|click here/i
+      ];
+      
+      // Check for offensive words
+      const lowerText = text.toLowerCase();
+      for (let word of offensiveWords) {
+        if (lowerText.includes(word)) {
+          return { approved: false, reason: 'Contains inappropriate language' };
+        }
+      }
+      
+      // Check for inappropriate patterns
+      for (let pattern of inappropriatePatterns) {
+        if (pattern.test(text)) {
+          return { approved: false, reason: 'Contains spam or inappropriate formatting' };
+        }
+      }
+      
+      // Check minimum length and relevance
+      if (text.trim().length < 2) {
+        return { approved: false, reason: 'Message too short' };
+      }
+      
+      if (text.length > 500) {
+        return { approved: false, reason: 'Message too long' };
+      }
+      
+      // Much more relaxed relevance check - allow most content
+      const irrelevantKeywords = ['spam', 'viagra', 'casino', 'porn', 'xxx'];
+      const isIrrelevant = irrelevantKeywords.some(keyword => lowerText.includes(keyword));
+      
+      if (isIrrelevant) {
+        return { approved: false, reason: 'Content not appropriate' };
+      }
+      
+      return { approved: true, reason: 'Content approved' };
+    }
+    
+    // Handle form submission
+    document.addEventListener('DOMContentLoaded', function() {
+      const campaignForm = document.getElementById('campaignForm');
+      if (!campaignForm) {
+        return;
+      }
+      
+      campaignForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const formData = new FormData(this);
+      const yourVoice = formData.get('yourVoice');
+      
+      // Moderate yourVoice if provided
+      if (yourVoice && yourVoice.trim()) {
+        const moderation = moderateContent(yourVoice);
+        
+        if (!moderation.approved) {
+          alert(`Your Voice not approved: ${moderation.reason}. Please revise your message.`);
+          return;
+        }
+      }
+      
+      // Get form data
+      const name = formData.get('name') || '';
+      const email = formData.get('email') || '';
+      const postcode = formData.get('postcode') || '';
+      const role = formData.get('role') || '';
+      
+      // SUBMIT TO GOOGLE APPS SCRIPT ONLY (handles both Sheets and Forms)
+      // Google Apps Script will handle the Google Forms submission internally
+      
+      // Show success immediately (don't wait for Google Apps Script)
+      closeCampaignModal();
+      this.reset();
+      setTimeout(() => {
+        showSuccessMessage();
+      }, 300);
+      
+      // SUBMIT TO GOOGLE APPS SCRIPT ONLY (handles everything)
+      const scriptUrl = 'https://script.google.com/macros/s/AKfycbwSwzTo0CoABmumnb7TuKeM4JSG_gTHfsdbYe_KUnOBpGVEZj4XadI02yR4Xuy4EmgI/exec';
+      
+      // Use URL-encoded format (most compatible with Google Apps Script)
+      const submissionData = new URLSearchParams();
+      submissionData.append('name', name);
+      submissionData.append('email', email);
+      submissionData.append('postcode', postcode);
+      submissionData.append('role', role);
+      submissionData.append('yourVoice', yourVoice || '');
+      
+      fetch(scriptUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: submissionData.toString()
+      }).catch(error => {
+      });
+      });
+    }); // Close DOMContentLoaded
+    const MANUAL_PARLIAMENT_TALLY = 0; // ← Parliament petition not yet created - will update once live
+    const el = document.getElementById('parl-count');
+    if (el) el.textContent = Number(MANUAL_PARLIAMENT_TALLY).toLocaleString();
+    
+    // Force Firefox favicon reload
+    (function(){
+      if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        const favicon = document.createElement('link');
+        favicon.rel = 'icon';
+        favicon.type = 'image/x-icon';
+        favicon.href = './favicon.ico?' + new Date().getTime();
+        const existingFavicon = document.querySelector('link[rel="icon"]');
+        if (existingFavicon) {
+          existingFavicon.parentNode.removeChild(existingFavicon);
+        }
+        document.getElementsByTagName('head')[0].appendChild(favicon);
+      }
+    })();
+    
+    // Social Share Functionality
+    (function(){
+      const url = 'https://example.com/';
+      const title = 'Support the LUNA SEN Regulator Petition';
+      const text = 'Join the campaign for equal recognition and protection for SEN learners across the UK.';
+      
+      const shareButton = document.getElementById('shareButton');
+      
+      if (shareButton) {
+        shareButton.addEventListener('click', () => {
+          if (navigator.share) {
+            // Use native Web Share API on mobile devices
+            try {
+              navigator.share({
+                title: title,
+                text: text,
+                url: url
+              });
+            } catch (err) {
+            }
+          } else {
+            // Fallback for desktop - copy to clipboard
+            try {
+              navigator.clipboard.writeText(url);
+              alert('Link copied to clipboard!');
+            } catch (err) {
+              // Fallback if clipboard API fails
+              const textArea = document.createElement('textarea');
+              textArea.value = url;
+              document.body.appendChild(textArea);
+              textArea.select();
+              document.execCommand('copy');
+              document.body.removeChild(textArea);
+              alert('Link copied to clipboard!');
+            }
+          }
+        });
+      }
+      
+    })();
+    
+    // FAQ Accordion Functionality - ISOLATED FOR FAQ SECTION
+    document.addEventListener('DOMContentLoaded', function() {
+      const faqDetails = document.querySelectorAll('.faq-card');
+      
+      faqDetails.forEach(detail => {
+        detail.addEventListener('toggle', function() {
+          if (this.open) {
+            // Close all other FAQs when one is opened
+            faqDetails.forEach(otherDetail => {
+              if (otherDetail !== this && otherDetail.open) {
+                otherDetail.open = false;
+              }
+            });
+          }
+        });
+      });
+    });
+    
+    // Load real testimonials from Google Sheets
+    function loadTestimonials() {
+      const webhookUrl = 'https://script.google.com/macros/s/AKfycbwSwzTo0CoABmumnb7TuKeM4JSG_gTHfsdbYe_KUnOBpGVEZj4XadI02yR4Xuy4EmgI/exec?action=getTestimonials';
+      
+      
+      fetch(webhookUrl, {
+        method: 'GET',
+        cache: 'no-cache',
+        mode: 'cors'
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        if (data.status === 'success' && data.testimonials) {
+          updateTestimonialsDisplay(data.testimonials);
+        }
+      })
+      .catch(error => {
+        // Keep the default testimonials that are already in the HTML
+      });
+    }
+    
+    function updateTestimonialsDisplay(testimonials) {
+      const carousel = document.querySelector('.testimonial-carousel');
+      if (!carousel) return;
+      
+      // Clear existing testimonials
+      carousel.innerHTML = '';
+      
+      // Create testimonials for display (duplicate for seamless loop)
+      const allTestimonials = [...testimonials, ...testimonials];
+      
+      allTestimonials.forEach((testimonial, index) => {
+        const figure = document.createElement('figure');
+        figure.className = 'card flex-shrink-0 w-full md:w-1/3';
+        
+        // Add proper hover effects by ensuring it's in the #testimonials section
+        figure.setAttribute('data-testimonial-index', index);
+        
+        figure.innerHTML = `
+          <blockquote class="text-sm md:text-base">"${testimonial.text}"</blockquote>
+          <figcaption class="mt-3 text-xs md:text-sm opacity-70">${testimonial.role}</figcaption>
+        `;
+        
+        carousel.appendChild(figure);
+      });
+      
+      // Re-apply hover effects after dynamic content is loaded
+      setTimeout(() => {
+        applyTestimonialHoverEffects();
+      }, 100);
+    }
+    
+    function applyTestimonialHoverEffects() {
+      const testimonialFigures = document.querySelectorAll('#testimonials figure');
+      testimonialFigures.forEach((figure, index) => {
+        // Remove any existing hover classes
+        figure.classList.remove('hover-pink', 'hover-gradient', 'hover-blue');
+        
+        // Apply the 3-card pattern hover effects
+        const cardIndex = index % 3;
+        if (cardIndex === 0) {
+          figure.classList.add('hover-pink');
+        } else if (cardIndex === 1) {
+          figure.classList.add('hover-gradient');
+        } else {
+          figure.classList.add('hover-blue');
+        }
+      });
+    }
+    
+    // Load testimonials when page loads with retry
+    document.addEventListener('DOMContentLoaded', function() {
+      // Try to load testimonials immediately
+      loadTestimonials();
+      
+      // Retry after 2 seconds if there was an error
+      setTimeout(() => {
+        const carousel = document.querySelector('.testimonial-carousel');
+        if (carousel && carousel.children.length === 0) {
+          loadTestimonials();
+        }
+      }, 2000);
+    });
+  </script>
+  
+  <!-- JSON-LD Structured Data -->
+  <!-- Organization -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"LUNA",
+    "url":"https://example.com",
+    "logo":"https://example.com/site/assets/Luna-logo.png",
+    "areaServed":"GB",
+    "founder":{"@type":"Person","name":"Lauren Moore","jobTitle":"Founder & Creator"},
+    "contactPoint":[{"@type":"ContactPoint","contactType":"campaign","email":"hello@example.com"}]
+  }
+  </script>
+
+  <!-- WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"LUNA",
+    "url":"https://example.com",
+    "inLanguage":"en-GB",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://example.com/search?q={query}",
+      "query-input":"required name=query"
+    }
+  }
+  </script>
+
+  <!-- WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"LUNA SEN Regulator Petition",
+    "url":"https://example.com/",
+    "isPartOf":{"@type":"WebSite","name":"LUNA","url":"https://example.com"},
+    "description":"Public petition to support the LUNA SEN Regulator.",
+    "author":{"@type":"Person","name":"Lauren Moore"},
+    "inLanguage":"en-GB",
+    "about":{"@type":"Thing","name":"LUNA SEN Regulator Petition UK"},
+    "keywords":["LUNA SEN Regulator Petition UK","SEND petition UK","SEN learners rights","special needs regulator UK","neurodiverse education rights","Ofqual SEN gap","SRQF"],
+    "potentialAction":{
+      "@type":"JoinAction",
+      "name":"Sign the Petition",
+      "target":"https://example.com/#signup"
+    }
+  }
+  </script>
+
+  <!-- ItemList of testimonials -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":"Community Voices",
+    "itemListElement":[
+      {"@type":"CreativeWork","headline":"My child has an EHCP but no pathway that fits","text":"My child has an EHCP but no pathway that fits. Adjustments are not the same as a designed framework."},
+      {"@type":"CreativeWork","headline":"We need qualifications mapped to EHCP outcomes","text":"We need qualifications mapped to EHCP outcomes, not after-the-fact accommodations."},
+      {"@type":"CreativeWork","headline":"SRQF would give employers clarity","text":"SRQF would give employers clarity and young people a fair route into work."},
+      {"@type":"CreativeWork","headline":"The current system fails our children daily","text":"The current system fails our children daily. We need LUNA SEN Regulator now."},
+      {"@type":"CreativeWork","headline":"As a teacher, I see students struggle","text":"As a teacher, I see students struggle with qualifications not designed for their needs."}
+    ]
+  }
+  </script>
+</body>
+</html>
