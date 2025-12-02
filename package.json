@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "LUNA SEN Regulator Petition Website",
   "scripts": {
-    "build-css": "tailwindcss -i ./src/input.css -o ./site/assets/styles.css --minify",
-    "watch-css": "tailwindcss -i ./src/input.css -o ./site/assets/styles.css --watch"
+    "build-css": "tailwindcss -i ./src/input.css -o ./assets/styles.css --minify",
+    "watch-css": "tailwindcss -i ./src/input.css -o ./assets/styles.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",

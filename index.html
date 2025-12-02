@@ -3,20 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <!-- Favicon - using only root favicon.ico to prevent 404 errors -->
   <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-  <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
-  <link rel="icon" type="image/vnd.microsoft.icon" href="./favicon.ico" />
-  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/apple-touch-icon.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
-  <link rel="manifest" href="./assets/manifest.json" />
+  <!-- Manifest disabled during development to prevent 404 errors -->
+  <!-- <link rel="manifest" href="./assets/manifest.json" /> -->
   <meta name="theme-color" content="#ff69b4" />
   <meta name="msapplication-TileColor" content="#ff69b4" />
-  <meta name="msapplication-TileImage" content="./assets/apple-touch-icon.png" />
-  <meta name="msapplication-config" content="./assets/browserconfig.xml" />
+  <meta name="msapplication-TileImage" content="./favicon.ico" />
+  <!-- Browserconfig disabled during development to prevent 404 errors -->
+  <!-- <meta name="msapplication-config" content="./assets/browserconfig.xml" /> -->
   
   <!-- Core SEO -->
   <title>LUNA SEN Regulator Petition — Sign & Support</title>
@@ -32,7 +28,7 @@
   <meta property="og:description" content="Support equal recognition and protection for SEN learners across the UK." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://example.com/" />
-  <meta property="og:image" content="https://example.com/site/assets/luna_og.jpg" />
+  <meta property="og:image" content="https://example.com/assets/luna_og.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/jpeg" />
@@ -40,7 +36,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="LUNA SEN Regulator Petition — Sign & Support" />
   <meta name="twitter:description" content="Back the LUNA SEN Regulator for fair protection and recognition." />
-  <meta name="twitter:image" content="https://example.com/site/assets/luna_og.jpg" />
+  <meta name="twitter:image" content="https://example.com/assets/luna_og.jpg" />
   
   <!-- Geo targeting (UK) -->
   <meta name="geo.region" content="GB" />
@@ -890,7 +886,7 @@
     .form-modal .modal-content {
       width: 95vw;
       max-width: 600px;
-      max-height: 95vh;
+      max-height: 90vh;
       background: #ffffff;
       border-radius: 16px;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 0 0 3px transparent;
@@ -898,15 +894,17 @@
       background-origin: border-box;
       background-clip: content-box, border-box;
       color: #333333;
+      display: flex;
       flex-direction: column;
-      overflow-y: auto;
       position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
     }
     
     @media (max-width: 768px) {
       .form-modal .modal-content {
         width: 98vw;
-        max-height: 98vh;
+        max-height: 95vh;
         margin: 1vh;
       }
     }
@@ -1022,9 +1020,58 @@
     }
     
     .form-modal .form-modal-content {
-      flex: 1;
-      overflow: visible;
-      padding: 0;
+      padding: 1.5rem;
+      overflow-y: auto;
+      overflow-x: hidden;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 100%;
+    }
+    
+    .form-modal .form-modal-content form {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .form-modal .form-group {
+      margin-bottom: 1.25rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .form-modal .form-group:last-of-type {
+      margin-bottom: 0;
+    }
+    
+    .form-modal input,
+    .form-modal select,
+    .form-modal textarea {
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+    
+    .form-modal label {
+      box-sizing: border-box;
+      max-width: 100%;
+      word-wrap: break-word;
+    }
+    
+    .form-modal .flex.items-start {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .form-modal .flex.items-start span {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    
+    @media (max-width: 768px) {
+      .form-modal .form-modal-content {
+        padding: 1rem;
+      }
     }
     
     /* Form field focus states with proper gradient order */
@@ -1243,7 +1290,7 @@
         <div class="rounded-2xl bg-white text-slate-900 p-6 shadow">
           <h4 class="text-xl font-bold">2) LUNA campaign sign-up (optional but helpful)</h4>
           <p class="mt-2 text-sm">Lets us present constituency-level evidence to MPs and keep supporters updated. <strong>Not</strong> a substitute for the Parliament petition.</p>
-          <a href="#petition" onclick="openCampaignModal(); return false;" class="mt-4 btn-secondary">Join campaign updates</a>
+          <a href="#" class="mt-4 btn-secondary" id="joinCampaignBtn">Join campaign updates</a>
         </div>
       </div>
 
@@ -1681,17 +1728,17 @@
   </footer>
 
   <!-- LUNA Campaign Sign-up Modal -->
-  <div class="form-modal" id="campaignModal" onclick="closeCampaignModal()">
+  <div class="form-modal" id="campaignModal" onclick="window.closeCampaignModal()">
     <div class="modal-content" onclick="event.stopPropagation()">
       <div class="form-modal-header">
         <h3>Join <span class="luna-text-gradient">LUNA</span> Campaign</h3>
         <div class="header-controls">
-          <button class="close-btn" onclick="closeCampaignModal()">×</button>
+          <button class="close-btn" onclick="window.closeCampaignModal()">×</button>
         </div>
       </div>
       
       <div class="form-modal-content">
-        <form id="campaignForm" class="space-y-4 p-4">
+        <form id="campaignForm">
           <div class="form-group">
             <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
             <input type="text" name="name" required class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300">
@@ -1729,23 +1776,23 @@
             </p>
           </div>
           
-          <div class="space-y-3">
-            <label class="flex items-start space-x-3">
-              <input type="checkbox" name="gdpr" required class="mt-1 h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 bg-white rounded">
+          <div class="form-group" style="margin-top: 1.5rem;">
+            <label class="flex items-start space-x-3" style="margin-bottom: 0.75rem;">
+              <input type="checkbox" name="gdpr" required id="gdprCheckbox" class="mt-1 h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 bg-white rounded" style="flex-shrink: 0;">
               <span class="text-sm text-gray-700">I'd like to receive campaign updates and help present evidence to MPs. I can unsubscribe anytime. *</span>
             </label>
             
             <label class="flex items-start space-x-3">
-              <input type="checkbox" name="newsletter" class="mt-1 h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 bg-white rounded">
+              <input type="checkbox" name="newsletter" id="newsletterCheckbox" class="mt-1 h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 bg-white rounded" style="flex-shrink: 0;">
               <span class="text-sm text-gray-700">I'd like to receive updates about <span class="luna-text-gradient">LUNA</span> SEN Regulator progress and developments.</span>
             </label>
           </div>
           
-          <div class="pt-4">
-            <button type="submit" class="w-full bg-gradient-to-r from-[#ff69b4] to-[#7ad7f0]  font-semibold py-3 px-6 rounded-lg hover:from-[#ff69b4] hover:to-[#7ad7f0] transition-all duration-300 transform hover:scale-105">Join LUNA Campaign</button>
+          <div class="form-group" style="margin-top: 1.5rem; padding-top: 1rem;">
+            <button type="submit" class="w-full bg-gradient-to-r from-[#ff69b4] to-[#7ad7f0] text-white font-semibold py-3 px-6 rounded-lg hover:from-[#ff69b4] hover:to-[#7ad7f0] transition-all duration-300 transform hover:scale-105">Join LUNA Campaign</button>
           </div>
           
-          <p class="text-xs text-gray-500 text-center">
+          <p class="text-xs text-gray-500 text-center" style="margin-top: 1rem;">
             <strong class="luna-text-gradient">Remember:</strong> This is supplementary to signing the official Parliament petition.
           </p>
         </form>
@@ -1755,12 +1802,35 @@
 
   <!-- Manual tally until backend exists -->
   <script>
+    // Make toggleMobileMenu globally accessible immediately
     function toggleMobileMenu() {
       const menu = document.getElementById('mobileNav');
       if (menu) {
         menu.classList.toggle('hidden');
       }
     }
+    
+    // Campaign modal functions - available immediately for onclick handlers
+    function openCampaignModal() {
+      const modal = document.getElementById('campaignModal');
+      if (modal) {
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+    
+    function closeCampaignModal() {
+      const modal = document.getElementById('campaignModal');
+      if (modal) {
+        modal.classList.remove('show');
+        document.body.style.overflow = ''; // Restore scrolling
+      }
+    }
+    
+    // Make functions globally accessible immediately
+    window.toggleMobileMenu = toggleMobileMenu;
+    window.openCampaignModal = openCampaignModal;
+    window.closeCampaignModal = closeCampaignModal;
     
     function toggleHamburger() {
       const content = document.getElementById('hamburgerContent');
@@ -1791,27 +1861,12 @@
       if (campaignModal && campaignModal.classList.contains('show')) {
         const modalContent = campaignModal.querySelector('.form-modal-content');
         if (modalContent && !modalContent.contains(event.target)) {
-          closeCampaignModal();
+          window.closeCampaignModal();
         }
       }
     });
     
-    // Campaign modal functions (Form Modal Style)
-    function openCampaignModal() {
-      const modal = document.getElementById('campaignModal');
-      if (modal) {
-        modal.classList.add('show');
-      }
-    }
-    
-    function closeCampaignModal() {
-      document.getElementById('campaignModal').classList.remove('show');
-    }
-    
-
-    // Make functions globally accessible
-    window.openCampaignModal = openCampaignModal;
-    window.closeCampaignModal = closeCampaignModal;
+    // Campaign modal functions are already defined above and globally accessible
     
     function showSuccessMessage() {
       // Create success message element
@@ -1853,7 +1908,7 @@
     // Close modal when clicking outside
     document.getElementById('campaignModal').addEventListener('click', function(event) {
       if (event.target === this) {
-        closeCampaignModal();
+        window.closeCampaignModal();
       }
     });
     
@@ -1909,13 +1964,56 @@
     
     // Handle form submission
     document.addEventListener('DOMContentLoaded', function() {
+      // Add click listener to campaign button
+      const joinCampaignBtn = document.getElementById('joinCampaignBtn');
+      if (joinCampaignBtn) {
+        joinCampaignBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          if (window.openCampaignModal) {
+            window.openCampaignModal();
+          }
+          return false;
+        });
+      }
+      
       const campaignForm = document.getElementById('campaignForm');
       if (!campaignForm) {
         return;
       }
       
+      // Auto-check newsletter when GDPR checkbox is checked
+      const gdprCheckbox = document.getElementById('gdprCheckbox');
+      const newsletterCheckbox = document.getElementById('newsletterCheckbox');
+      
+      if (gdprCheckbox && newsletterCheckbox) {
+        // Ensure both start unchecked
+        gdprCheckbox.checked = false;
+        newsletterCheckbox.checked = false;
+        
+        // When first checkbox is checked, also check second
+        gdprCheckbox.addEventListener('change', function() {
+          if (this.checked) {
+            newsletterCheckbox.checked = true;
+          } else {
+            // If first is unchecked, uncheck second too
+            newsletterCheckbox.checked = false;
+          }
+        });
+        
+        // User can manually uncheck second even if first is checked
+        // (This is allowed - no need to prevent it)
+      }
+      
       campaignForm.addEventListener('submit', function(event) {
       event.preventDefault();
+      
+      // Validate required checkbox
+      const gdprCheckbox = this.querySelector('input[name="gdpr"]');
+      if (!gdprCheckbox || !gdprCheckbox.checked) {
+        alert('Please agree to receive campaign updates to continue.');
+        return;
+      }
       
       const formData = new FormData(this);
       const yourVoice = formData.get('yourVoice');
@@ -1940,14 +2038,14 @@
       // Google Apps Script will handle the Google Forms submission internally
       
       // Show success immediately (don't wait for Google Apps Script)
-      closeCampaignModal();
+      window.closeCampaignModal();
       this.reset();
       setTimeout(() => {
         showSuccessMessage();
       }, 300);
       
       // SUBMIT TO GOOGLE APPS SCRIPT ONLY (handles everything)
-      const scriptUrl = 'https://script.google.com/macros/s/AKfycbwSwzTo0CoABmumnb7TuKeM4JSG_gTHfsdbYe_KUnOBpGVEZj4XadI02yR4Xuy4EmgI/exec';
+      const scriptUrl = 'https://script.google.com/macros/s/AKfycbxjNd2Ds7opvYCclOXoAXE6gA5npMun--GrzBjFW_BLYorrZ-ghgXb_17UMGYINYKw1/exec';
       
       // Use URL-encoded format (most compatible with Google Apps Script)
       const submissionData = new URLSearchParams();
@@ -1957,13 +2055,20 @@
       submissionData.append('role', role);
       submissionData.append('yourVoice', yourVoice || '');
       
+      // Submit form to Google Apps Script
       fetch(scriptUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
         },
         body: submissionData.toString()
-      }).catch(error => {
+      }).then(response => {
+        // Form submitted successfully
+        if (response.ok || response.type === 'opaqueredirect') {
+          // Success - data sent to Google Apps Script
+        }
+      }).catch(() => {
+        // Silently handle errors - form submission continues regardless
       });
       });
     }); // Close DOMContentLoaded
@@ -1971,18 +2076,25 @@
     const el = document.getElementById('parl-count');
     if (el) el.textContent = Number(MANUAL_PARLIAMENT_TALLY).toLocaleString();
     
-    // Force Firefox favicon reload
+    // Force Firefox favicon reload (ensures all browsers have favicon) - only reload if not already loaded
     (function(){
-      if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-        const favicon = document.createElement('link');
-        favicon.rel = 'icon';
-        favicon.type = 'image/x-icon';
-        favicon.href = './favicon.ico?' + new Date().getTime();
-        const existingFavicon = document.querySelector('link[rel="icon"]');
-        if (existingFavicon) {
-          existingFavicon.parentNode.removeChild(existingFavicon);
+      try {
+        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+          // Check if favicon already exists and is loaded
+          const existingFavicon = document.querySelector('link[rel="icon"]');
+          if (existingFavicon) {
+            // Only reload if it doesn't have a timestamp (hasn't been reloaded yet)
+            if (!existingFavicon.href.includes('?')) {
+              const favicon = document.createElement('link');
+              favicon.rel = 'icon';
+              favicon.type = 'image/x-icon';
+              favicon.href = './favicon.ico?' + new Date().getTime();
+              existingFavicon.parentNode.replaceChild(favicon, existingFavicon);
+            }
+          }
         }
-        document.getElementsByTagName('head')[0].appendChild(favicon);
+      } catch(e) {
+        // Silently fail - favicon will use default
       }
     })();
     
@@ -2047,26 +2159,29 @@
     
     // Load real testimonials from Google Sheets
     function loadTestimonials() {
-      const webhookUrl = 'https://script.google.com/macros/s/AKfycbwSwzTo0CoABmumnb7TuKeM4JSG_gTHfsdbYe_KUnOBpGVEZj4XadI02yR4Xuy4EmgI/exec?action=getTestimonials';
-      
+      const webhookUrl = 'https://script.google.com/macros/s/AKfycbxjNd2Ds7opvYCclOXoAXE6gA5npMun--GrzBjFW_BLYorrZ-ghgXb_17UMGYINYKw1/exec?action=getTestimonials';
       
       fetch(webhookUrl, {
         method: 'GET',
-        cache: 'no-cache',
+        redirect: 'follow',
         mode: 'cors'
       })
       .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        if (response.ok) {
+          return response.json();
         }
-        return response.json();
+        // If rate limited (429), just use defaults
+        if (response.status === 429) {
+          return null;
+        }
+        throw new Error('Response not ok');
       })
       .then(data => {
-        if (data.status === 'success' && data.testimonials) {
+        if (data && data.status === 'success' && data.testimonials) {
           updateTestimonialsDisplay(data.testimonials);
         }
       })
-      .catch(error => {
+      .catch(() => {
         // Keep the default testimonials that are already in the HTML
       });
     }
@@ -2143,10 +2258,10 @@
     "@type":"Organization",
     "name":"LUNA",
     "url":"https://example.com",
-    "logo":"https://example.com/site/assets/Luna-logo.png",
+    "logo":"https://example.com/assets/Luna-logo.png",
     "areaServed":"GB",
     "founder":{"@type":"Person","name":"Lauren Moore","jobTitle":"Founder & Creator"},
-    "contactPoint":[{"@type":"ContactPoint","contactType":"campaign","email":"hello@example.com"}]
+    "contactPoint":[{"@type":"ContactPoint","contactType":"campaign","email":"petition@lunasenregulator.org.uk"}]
   }
   </script>
 

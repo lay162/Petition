@@ -4,8 +4,8 @@ LUNA SEN Regulator — SRQF Petition Static Site
 DEPLOYMENT INSTRUCTIONS
 -----------------------
 
-1. Upload the entire /site folder to your hosting provider:
-   - Netlify: Drag and drop the /site folder
+1. Upload the entire project root folder to your hosting provider:
+   - Netlify: Drag and drop the root folder
    - Vercel: Connect GitHub repo or drag and drop
    - GitHub Pages: Upload to repository
    - Any static hosting service
@@ -20,24 +20,24 @@ UPDATING CONTENT
 ----------------
 
 1. Parliament Petition URL:
-   - Edit /site/index.html
+   - Edit /index.html (in root directory)
    - Find: https://petition.parliament.uk/petitions/REPLACE_WITH_ID
    - Replace REPLACE_WITH_ID with actual petition ID
 
 2. Manual Parliament Tally:
-   - Edit /site/index.html
+   - Edit /index.html (in root directory)
    - Find: const MANUAL_PARLIAMENT_TALLY = 0;
    - Update the number daily
 
 3. LUNA Campaign Form URL:
-   - Edit /site/index.html
+   - Edit /index.html (in root directory)
    - Find: https://forms.gle/REPLACE_WITH_YOUR_FORM
    - Replace with your actual Google Form URL
 
 EVIDENCE FILES
 --------------
 
-Replace these placeholder files in /site/docs/ with your actual documents:
+Replace these placeholder files in /docs/ with your actual documents:
 
 ✅ COMPLETED:
 - ofqual-response.pdf
@@ -62,7 +62,7 @@ Replace these placeholder files in /site/docs/ with your actual documents:
 ASSETS
 ------
 
-Replace these placeholder files in /site/assets/:
+Replace these placeholder files in /assets/:
 
 - favicon.ico (use your LUNA favicon)
 - luna_og.jpg (use your LUNA Open Graph image)
