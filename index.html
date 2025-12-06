@@ -13,20 +13,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Favicon -->
+  <!-- Favicon - Multiple sizes for all browsers and devices -->
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
   <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="./assets/LUNA-SEN-REG-LOGO.png" />
   
-  <!-- Apple Touch Icon (iOS home screen) -->
-  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
+  <!-- Android Chrome Icons -->
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  
+  <!-- Apple Touch Icon (iOS home screen) - Multiple sizes for all Apple devices -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="./assets/LUNA-SEN-REG-LOGO.png" />
+  <link rel="apple-touch-icon" sizes="512x512" href="./assets/LUNA-SEN-REG-LOGO.png" />
   
   <!-- Web App Manifest (PWA - Add to Home Screen) -->
   <link rel="manifest" href="./assets/manifest.json" />
   
   <meta name="theme-color" content="#ff69b4" />
   <meta name="msapplication-TileColor" content="#ff69b4" />
-  <meta name="msapplication-TileImage" content="./assets/apple-touch-icon.png" />
+  <meta name="msapplication-TileImage" content="./assets/LUNA-SEN-REG-LOGO.png" />
+  <meta name="msapplication-square70x70logo" content="./assets/LUNA-SEN-REG-LOGO.png" />
+  <meta name="msapplication-square150x150logo" content="./assets/LUNA-SEN-REG-LOGO.png" />
+  <meta name="msapplication-wide310x150logo" content="./assets/LUNA-SEN-REG-LOGO.png" />
+  <meta name="msapplication-square310x310logo" content="./assets/LUNA-SEN-REG-LOGO.png" />
   <meta name="msapplication-config" content="./assets/browserconfig.xml" />
   
   <!-- Core SEO -->
@@ -2421,7 +2444,8 @@
               navigator.share({
                 title: title,
                 text: text,
-                url: url
+                url: url,
+                files: [] // Image will be pulled from OG tags automatically
               });
             } catch (err) {
             }
@@ -2637,6 +2661,7 @@
     "url":"https://petition.lunasenregulator.org.uk/",
     "isPartOf":{"@type":"WebSite","name":"LUNA","url":"https://petition.lunasenregulator.org.uk"},
     "description":"Public petition to support the LUNA SEN Regulator.",
+    "image":"https://petition.lunasenregulator.org.uk/assets/LUNA-SEN-REGULATOR-OG-LOGO.jpg",
     "author":{"@type":"Person","name":"Lauren Moore","jobTitle":"Founder, Creator & Owner"},
     "inLanguage":"en-GB",
     "about":{"@type":"Thing","name":"LUNA SEN Regulator Petition UK"},
