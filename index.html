@@ -1,51 +1,140 @@
 <!DOCTYPE html>
+<!--
+  LUNA SEN Regulator Petition Landing Page
+  Created by: Lauren Moore
+  Founder, Creator & Owner: Lauren Moore
+  Copyright © 2025 Lauren Moore / LUNA SEN Regulator
+  All Rights Reserved
+  
+  Website: https://petition.lunasenregulator.org.uk/
+  Organization: LUNA SEN Regulator
+-->
 <html lang="en-GB">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Favicon - using only root favicon.ico to prevent 404 errors -->
-  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-  <!-- Manifest disabled during development to prevent 404 errors -->
-  <!-- <link rel="manifest" href="./assets/manifest.json" /> -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  
+  <!-- Apple Touch Icon (iOS home screen) -->
+  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
+  
+  <!-- Web App Manifest (PWA - Add to Home Screen) -->
+  <link rel="manifest" href="./assets/manifest.json" />
+  
   <meta name="theme-color" content="#ff69b4" />
   <meta name="msapplication-TileColor" content="#ff69b4" />
-  <meta name="msapplication-TileImage" content="./favicon.ico" />
-  <!-- Browserconfig disabled during development to prevent 404 errors -->
-  <!-- <meta name="msapplication-config" content="./assets/browserconfig.xml" /> -->
+  <meta name="msapplication-TileImage" content="./assets/apple-touch-icon.png" />
+  <meta name="msapplication-config" content="./assets/browserconfig.xml" />
   
   <!-- Core SEO -->
-  <title>LUNA SEN Regulator Petition — Sign & Support</title>
-  <meta name="description" content="Add your name to support the LUNA SEN Regulator so neurodiverse learners are recognised, protected and given equal opportunities across the UK." />
-  <link rel="canonical" href="https://example.com/" />
+  <title>LUNA SEN Regulator Petition — Sign & Support | England UK Parliament Petition</title>
+  <meta name="description" content="Sign the UK Parliament petition to create a national SEN Qualifications Regulator & Framework. Support SEND/EHCP learners across England with fair progression and equal access to qualifications. Petition 743461 on petition.parliament.uk" />
+  <meta name="keywords" content="SEN regulator, SEND qualifications, EHCP qualifications, UK Parliament petition, England education, special educational needs, SEN framework, petition.parliament.uk, SEN qualifications regulator, SEND learners England, neurodiverse education UK, special needs qualifications, Parliament petition 743461, SEN regulation England, SEND support UK, educational equality England" />
+  <link rel="canonical" href="https://petition.lunasenregulator.org.uk/" />
   <meta name="author" content="Lauren Moore" />
+  <meta name="copyright" content="© 2025 Lauren Moore / LUNA SEN Regulator. All Rights Reserved." />
+  <meta name="creator" content="Lauren Moore" />
+  <meta name="owner" content="Lauren Moore" />
   <meta name="robots" content="index,follow" />
+  <link rel="alternate" hreflang="en-GB" href="https://petition.lunasenregulator.org.uk/" />
   
-  <!-- Open Graph / Twitter -->
-  <meta property="og:site_name" content="LUNA" />
+  <!-- Open Graph / Universal Social Sharing (Facebook, LinkedIn, WhatsApp, etc.) -->
+  <meta property="og:site_name" content="LUNA SEN Regulator" />
   <meta property="og:locale" content="en_GB" />
-  <meta property="og:title" content="LUNA SEN Regulator Petition — Sign & Support" />
-  <meta property="og:description" content="Support equal recognition and protection for SEN learners across the UK." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://example.com/" />
-  <meta property="og:image" content="https://example.com/assets/luna_og.jpg" />
+  <meta property="og:url" content="https://petition.lunasenregulator.org.uk/" />
+  <meta property="og:title" content="Sign UK Parliament Petition 743461: LUNA SEN Regulator | Support SEND/EHCP Learners" />
+  <meta property="og:description" content="Sign now! Create a national SEN Qualifications Regulator & Framework for SEND/EHCP learners. Ofqual confirmed RQF wasn't designed for SEN. Help fix this gap. Petition 743461." />
+  <meta property="og:image" content="https://petition.lunasenregulator.org.uk/assets/LUNA-SEN-REGULATOR-OG-LOGO.jpg" />
+  <meta property="og:image:secure_url" content="https://petition.lunasenregulator.org.uk/assets/LUNA-SEN-REGULATOR-OG-LOGO.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:alt" content="LUNA SEN Regulator Petition - Sign to support SEND/EHCP learners across England" />
+  <meta property="og:updated_time" content="2025-12-06T00:00:00Z" />
+  <meta property="article:published_time" content="2025-06-01T00:00:00Z" />
+  <meta property="article:modified_time" content="2025-12-06T00:00:00Z" />
+  <meta property="og:see_also" content="https://petition.parliament.uk/petitions/743461" />
   
+  <!-- Preload OG image for faster share preview loading -->
+  <link rel="preload" as="image" href="https://petition.lunasenregulator.org.uk/assets/LUNA-SEN-REGULATOR-OG-LOGO.jpg" />
+  
+  <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="LUNA SEN Regulator Petition — Sign & Support" />
-  <meta name="twitter:description" content="Back the LUNA SEN Regulator for fair protection and recognition." />
-  <meta name="twitter:image" content="https://example.com/assets/luna_og.jpg" />
+  <meta name="twitter:site" content="@LUNASENReg" />
+  <meta name="twitter:creator" content="@LUNASENReg" />
+  <meta name="twitter:title" content="Sign UK Parliament Petition 743461: LUNA SEN Regulator | Support SEND/EHCP Learners" />
+  <meta name="twitter:description" content="Sign now! Create a national SEN Qualifications Regulator & Framework. Ofqual confirmed RQF wasn't designed for SEN. Help fix this gap. Petition 743461." />
+  <meta name="twitter:image" content="https://petition.lunasenregulator.org.uk/assets/LUNA-SEN-REGULATOR-OG-LOGO.jpg" />
+  <meta name="twitter:image:alt" content="LUNA SEN Regulator Petition - Sign to support SEND/EHCP learners across England" />
   
-  <!-- Geo targeting (UK) -->
+  <!-- Additional mobile sharing support - ensures image appears in share dialogs (Samsung, Apple, WhatsApp, SMS, etc.) -->
+  <meta name="image" content="https://petition.lunasenregulator.org.uk/assets/LUNA-SEN-REGULATOR-OG-LOGO.jpg" />
+  <link rel="image_src" href="https://petition.lunasenregulator.org.uk/assets/LUNA-SEN-REGULATOR-OG-LOGO.jpg" />
+  
+  <!-- Additional platform-specific meta tags for better mobile sharing -->
+  <meta property="article:author" content="Lauren Moore" />
+  <meta name="thumbnail" content="https://petition.lunasenregulator.org.uk/assets/LUNA-SEN-REGULATOR-OG-LOGO.jpg" />
+  
+  <!-- Email Clients / Link Previews -->
+  <meta name="format-detection" content="telephone=no" />
+  
+  <!-- Additional Platform Support -->
+  <meta name="application-name" content="LUNA SEN Regulator" />
+  <meta name="apple-mobile-web-app-title" content="LUNA Petition" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  
+  <!-- Geo targeting (UK/England) -->
+  <meta name="geo.region" content="GB-ENG" />
+  <meta name="geo.placename" content="England, United Kingdom" />
+  <meta name="geo.position" content="52.3555;-1.1743" />
+  <meta name="ICBM" content="52.3555;-1.1743" />
   <meta name="geo.region" content="GB" />
-  <meta name="geo.placename" content="United Kingdom" />
-  <meta name="geo.position" content="55.3781;-3.4360" />
-  <meta name="ICBM" content="55.3781;-3.4360" />
+  <meta name="distribution" content="England, UK" />
+  <meta name="target" content="England, United Kingdom" />
   
   <!-- Freshness -->
   <meta property="article:modified_time" content="2024-12-19T12:00:00Z" />
+  
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "LUNA SEN Regulator Petition — Sign & Support",
+    "description": "Sign UK Parliament petition 743461 to create a national SEN Qualifications Regulator & Framework for SEND/EHCP learners across England",
+    "url": "https://petition.lunasenregulator.org.uk/",
+    "inLanguage": "en-GB",
+    "about": {
+      "@type": "Thing",
+      "name": "SEN Qualifications Regulator",
+      "description": "National SEN Qualifications Regulator and Framework for SEND/EHCP learners in England"
+    },
+    "mainEntity": {
+      "@type": "Petition",
+      "name": "Create a national SEN Qualifications Regulator & SEN Qualifications Framework",
+      "url": "https://petition.parliament.uk/petitions/743461",
+      "description": "We want the Government to legislate for an independent SEN/EHCP qualifications regulator and a dedicated national Luna SEN Regulated Qualifications Framework",
+      "spatialCoverage": {
+        "@type": "Country",
+        "name": "England, United Kingdom"
+      }
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://petition.lunasenregulator.org.uk/"
+      }]
+    }
+  }
+  </script>
   
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="./assets/styles.css" />
@@ -239,20 +328,29 @@
       transform: translateY(-2px); 
     }
     
-    /* Hover effects matching LUNA pattern - EVIDENCE SECTION ONLY */
+    /* Hover effects matching LUNA pattern - EVIDENCE SECTION ONLY - using outline to prevent text movement */
     #evidence .card:nth-child(3n+1):hover { 
-      border: 2px solid var(--primary) !important; 
+      border: 1px solid var(--border-color-light) !important;
+      border-top: 4px solid var(--primary) !important;
+      outline: 2px solid var(--primary);
+      outline-offset: -2px;
       box-shadow: 0 4px 16px rgba(255, 105, 180, 0.15); 
     }
     #evidence .card:nth-child(3n+2):hover { 
       background: linear-gradient(var(--bg-content-lighter-light), var(--bg-content-lighter-light)) padding-box,
                   var(--text-gradient) border-box;
-      border: 2px solid transparent;
+      border: 1px solid transparent !important;
+      border-top: 4px solid transparent !important;
+      outline: 2px solid transparent;
+      outline-offset: -2px;
       border-radius: 1rem;
       box-shadow: 0 4px 16px rgba(122, 215, 240, 0.15); 
     }
     #evidence .card:nth-child(3n+3):hover { 
-      border: 2px solid var(--secondary) !important; 
+      border: 1px solid var(--border-color-light) !important;
+      border-top: 4px solid var(--secondary) !important;
+      outline: 2px solid var(--secondary);
+      outline-offset: -2px;
       box-shadow: 0 4px 16px rgba(122, 215, 240, 0.15); 
     }
     
@@ -276,6 +374,7 @@
       color: #7ad7f0 !important; 
       transition: color 0.3s ease !important;
     }
+    
     
     /* Download link colors - EVIDENCE SECTION ONLY - Match card border colors */
     #evidence .card:nth-child(3n+1) a.link { 
@@ -482,6 +581,7 @@
         linear-gradient(90deg, #ffffff 0%, #ffffff 46%, #dc143c 46%, #dc143c 54%, #ffffff 54%, #ffffff 100%),
         linear-gradient(0deg, #ffffff 0%, #ffffff 45%, #dc143c 45%, #dc143c 55%, #ffffff 55%, #ffffff 100%);
       background-blend-mode: multiply;
+      -webkit-background-blend-mode: multiply;
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent !important;
@@ -492,6 +592,53 @@
       padding: 2px 4px;
       border-radius: 4px;
       filter: contrast(1.5) brightness(1.3) saturate(1.2);
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Safari/iOS specific fix - overlay method to ensure both lines visible */
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      @supports (-webkit-appearance: none) and (not (background-blend-mode: multiply)) {
+        .england-flag {
+          background: white;
+        }
+        .england-flag::before {
+          content: attr(data-text);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(90deg, transparent 0%, transparent 46%, #dc143c 46%, #dc143c 54%, transparent 54%, transparent 100%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: transparent;
+          pointer-events: none;
+          z-index: 1;
+          font-weight: 900;
+          font-size: 1.2em;
+        }
+        .england-flag::after {
+          content: attr(data-text);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(0deg, transparent 0%, transparent 45%, #dc143c 45%, #dc143c 55%, transparent 55%, transparent 100%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: transparent;
+          pointer-events: none;
+          z-index: 2;
+          font-weight: 900;
+          font-size: 1.2em;
+          mix-blend-mode: multiply;
+          -webkit-mix-blend-mode: multiply;
+        }
+      }
     }
     
     a.link{ color: var(--primary); text-decoration: none; transition: color 0.3s ease; }
@@ -1121,7 +1268,7 @@
       <div class="px-4 py-2">
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-2 pl-1">
-            <img src="./assets/Luna-logo.png" alt="LUNA Logo" class="h-6 w-6 object-contain" loading="eager" />
+            <img src="./assets/LUNA-SEN-REG-LOGO.png" alt="LUNA Logo" class="h-6 w-6 object-contain" loading="eager" />
             <div>
               <h1 class="text-sm font-bold text-white"><span class="luna-text-gradient">LUNA</span> <span class="text-white">SEN Regulator Petition</span></h1>
             </div>
@@ -1154,7 +1301,7 @@
     <div class="hidden md:block w-full py-4">
       <div class="flex items-center justify-between gap-4 w-full">
         <div class="flex items-center gap-3 flex-shrink-0 pl-4" style="margin-left: 0;">
-          <img src="./assets/Luna-logo.png" alt="LUNA Logo" class="h-10 w-10 object-contain flex-shrink-0" style="margin-left: 0 !important;" loading="eager" />
+          <img src="./assets/LUNA-SEN-REG-LOGO.png" alt="LUNA Logo" class="h-10 w-10 object-contain flex-shrink-0" style="margin-left: 0 !important;" loading="eager" />
           <div>
             <h1 class="text-lg font-extrabold tracking-tight text-white"><span class="luna-text-gradient">LUNA</span> <span class="text-white">SEN Regulator Petition</span></h1>
           </div>
@@ -1204,13 +1351,13 @@
               <br><br>
               <strong class=" font-black text-base md:text-lg">"<span style="color: var(--primary)">Recognise</span>, <span class="luna-text-gradient">authorise</span> and <span style="color: var(--secondary)">implement</span>"</strong>
               <br>
-              <strong class=" font-black text-base md:text-lg"><span class="luna-text-gradient">LUNA</span> SEN Regulator - we are the solution <span class="england-flag">England</span> desperately needs."</strong>
+              <strong class=" font-black text-base md:text-lg"><span class="luna-text-gradient">LUNA</span> SEN Regulator - we are the solution <span class="england-flag" data-text="England">England</span> desperately needs."</strong>
             </div>
           </p>
           
           <div class="mt-8 mb-6 flex flex-col sm:flex-row gap-3 justify-center items-center px-4">
             <a href="#evidence" class="btn-secondary w-full sm:w-auto text-center">See the evidence</a>
-            <a href="#petition" class="btn-primary w-full sm:w-auto text-center">Add your name</a>
+            <a href="#petition" class="btn-primary w-full sm:w-auto text-center">Sign the petition</a>
           </div>
           
         </div>
@@ -1224,7 +1371,7 @@
           </p>
           <div class="mt-4 md:mt-6 p-3 md:p-4 bg-gradient-to-r from-pink-50 to-blue-50 rounded-lg" style="border: 2px solid; border-image: linear-gradient(135deg, #ff69b4, #7ad7f0) 1;">
             <p class="text-slate-800 font-semibold text-sm md:text-base">
-              We demand government <span style="color: var(--primary)">recognition</span>, <span class="luna-text-gradient">authorisation</span>, and <span style="color: var(--secondary)">implementation</span> of the <strong><span class="luna-text-gradient">LUNA</span> SEN Regulator</strong> as England's official SEN regulator - working parallel to Ofqual with the <strong>SRQF (SEN Regulated Qualifications Framework)</strong> designed specifically for SEN/EHCP learners.
+              We demand government <span style="color: var(--primary)">recognition</span>, <span class="luna-text-gradient">authorisation</span>, and <span style="color: var(--secondary)">implementation</span> of the <strong><span class="luna-text-gradient">LUNA</span> SEN Regulator</strong> as England's official SEN regulator - working parallel to Ofqual with the <strong>LSRQF (<span class="luna-text-gradient font-bold">LUNA</span> SEN Regulated Qualifications Framework)</strong> designed specifically for SEN/EHCP learners.
             </p>
           </div>
         </div>
@@ -1248,9 +1395,9 @@
       <div class="card card-2">
         <h3 class="text-2xl font-extrabold text-center">The remedy</h3>
         <ul class="mt-3 list-disc pl-6 space-y-2">
-          <li><strong style="color: var(--primary)">Recognise</strong> the LUNA SEN Regulator as England's official SEN regulator.</li>
-          <li><strong class="luna-text-gradient">Authorise</strong> the LUNA SEN Regulator to operate parallel to Ofqual.</li>
-          <li><strong style="color: var(--secondary)">Implement</strong> the SEN Regulated Qualifications Framework (SRQF) designed specifically for SEN/EHCP learners.</li>
+          <li><strong style="color: var(--primary)">Recognise</strong> the <span class="luna-text-gradient font-bold">LUNA</span> SEN Regulator as England's official SEN regulator.</li>
+          <li><strong class="luna-text-gradient">Authorise</strong> the <span class="luna-text-gradient font-bold">LUNA</span> SEN Regulator to operate parallel to Ofqual.</li>
+          <li><strong style="color: var(--secondary)">Implement</strong> the <span class="luna-text-gradient font-bold">LUNA</span> SEN Regulated Qualifications Framework (LSRQF) designed specifically for SEN/EHCP learners.</li>
         </ul>
       </div>
     </div>
@@ -1259,7 +1406,7 @@
   <!-- PETITION -->
   <section id="petition" class="">
     <div class="mx-auto max-w-5xl px-6 text-center">
-      <h3 class="text-3xl md:text-4xl font-extrabold">Add your name  two quick steps</h3>
+      <h3 class="text-3xl md:text-4xl font-extrabold">Sign the petition — two quick steps</h3>
       <p class="mt-12 text-lg max-w-3xl mx-auto">
         <strong>Step 1:</strong> Sign the Parliament petition <strong style="color: var(--primary)">(this is what ministers count)</strong>
         <br>
@@ -1275,10 +1422,12 @@
       </div>
 
       <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
-        <div class="rounded-2xl bg-white text-slate-900 p-6 shadow">
+        <div class="rounded-2xl bg-white text-slate-900 p-6 shadow flex flex-col">
           <h4 class="text-xl font-bold">1) Parliament petition (required)</h4>
-          <p class="mt-2 text-sm">Triggers a Government response and may lead to debate. Your signature is recorded publicly by Parliament.</p>
-          <a href="#petition" onclick="alert('Parliament petition link will be added once petition is created')" class="mt-4 btn-primary text-center">Sign on petition.parliament.uk</a>
+          <p class="mt-2 text-sm flex-grow mb-6">Triggers a Government response and may lead to debate. Your signature is recorded publicly by Parliament.</p>
+          <div class="text-center mt-auto pt-4">
+            <a href="https://petition.parliament.uk/petitions/743461" target="_blank" rel="noopener noreferrer" class="btn-primary">Sign on petition.parliament.uk</a>
+          </div>
         </div>
         <div class="rounded-2xl bg-black text-white p-6 shadow-lg flex flex-col justify-center items-center">
           <h4 class="text-xl font-bold text-center luna-text-gradient">Latest Petition Count</h4>
@@ -1287,13 +1436,62 @@
             <p class="text-sm opacity-90 mt-2">Signatures on petition.parliament.uk</p>
           </div>
         </div>
-        <div class="rounded-2xl bg-white text-slate-900 p-6 shadow">
-          <h4 class="text-xl font-bold">2) LUNA campaign sign-up (optional but helpful)</h4>
-          <p class="mt-2 text-sm">Lets us present constituency-level evidence to MPs and keep supporters updated. <strong>Not</strong> a substitute for the Parliament petition.</p>
-          <a href="#" class="mt-4 btn-secondary" id="joinCampaignBtn">Join campaign updates</a>
+        <div class="rounded-2xl bg-white text-slate-900 p-6 shadow flex flex-col">
+          <h4 class="text-xl font-bold">2) LUNA campaign sign-up</h4>
+          <h4 class="text-xl font-bold text-center mt-1">(optional but helpful)</h4>
+          <p class="mt-2 text-sm flex-grow">Lets us present constituency-level evidence to MPs and keep supporters updated. <strong>Not</strong> a substitute for the Parliament petition.</p>
+          <div class="text-center mt-auto pt-4">
+            <a href="#" class="btn-secondary" id="joinCampaignBtn">Join campaign updates</a>
+          </div>
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- SOCIAL MEDIA -->
+  <section class="py-12 bg-slate-50">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6">
+      <div class="rounded-2xl bg-black text-white p-6 md:p-8 shadow-lg flex flex-col justify-center items-center">
+        <div class="text-center pt-4">
+          <h4 class="text-lg md:text-2xl font-bold text-center luna-text-gradient mb-6 md:mb-8">Stay Connected</h4>
+          <p class="text-sm md:text-lg text-white mb-2 md:mb-3">Join our community and help spread the word</p>
+          <p class="text-xs md:text-base text-white opacity-90 mb-6 md:mb-8">Follow <span class="luna-text-gradient font-bold">LUNA</span> SEN Regulator for updates</p>
+          <div class="flex items-center justify-center gap-4 md:gap-6 flex-wrap">
+        <a href="https://x.com/LUNASENReg" target="_blank" rel="noopener noreferrer" class="transition-opacity duration-300 hover:opacity-80" aria-label="Follow us on Twitter/X">
+          <svg width="24" height="24" class="md:w-7 md:h-7" viewBox="0 0 24 24" fill="#ff69b4">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/LUNASENRegulator" target="_blank" rel="noopener noreferrer" class="transition-opacity duration-300 hover:opacity-80" aria-label="Follow us on Facebook">
+          <svg width="24" height="24" class="md:w-7 md:h-7" viewBox="0 0 24 24" fill="#ff69b4">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/lunasenregulator" target="_blank" rel="noopener noreferrer" class="transition-opacity duration-300 hover:opacity-80" aria-label="Follow us on Instagram">
+          <svg width="24" height="24" class="md:w-7 md:h-7" viewBox="0 0 24 24" fill="url(#instagram-gradient-main)">
+            <defs>
+              <linearGradient id="instagram-gradient-main" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#ff69b4;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#7ad7f0;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/lunasenregulator" target="_blank" rel="noopener noreferrer" class="transition-opacity duration-300 hover:opacity-80" aria-label="Follow us on LinkedIn">
+          <svg width="24" height="24" class="md:w-7 md:h-7" viewBox="0 0 24 24" fill="#7ad7f0">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@lunasenregulator" target="_blank" rel="noopener noreferrer" class="transition-opacity duration-300 hover:opacity-80" aria-label="Follow us on TikTok">
+          <svg width="24" height="24" class="md:w-7 md:h-7" viewBox="0 0 24 24" fill="#7ad7f0">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+          </svg>
+        </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1304,12 +1502,22 @@
     
 
       <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- EVIDENCE CARDS - Follow this exact structure for new cards:
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">[NUMBER]. [Title]</h4>
+          <p class="mt-2 text-slate-700 text-center">[Description with date if applicable].</p>
+          <div class="mt-4 text-center">
+            <a href="docs/[filename].pdf" class="text-sm font-semibold link" target="_blank">View [Title] PDF →</a>
+          </div>
+        </div>
+        Cards automatically follow Pink → Gradient → Blue pattern. Remember to add timeline event too. -->
+        
         <!-- ESSENTIAL LEGAL EVIDENCE - Complete legal journey -->
         <div class="card">
           <h4 class="font-bold text-lg text-center">1. Initial MP Approach</h4>
           <p class="mt-2 text-slate-700 text-center">First approach to Justin Madders MP regarding LUNA SEN qualifications framework (June 2025).</p>
           <div class="mt-4 text-center">
-            <a href="docs/Gmail%20-%20(Case%20Ref_%20ZA65398)%20Redacted_redacted.pdf" class="text-sm font-semibold link" target="_blank">View MP Email Thread PDF →</a>
+            <a href="docs/01-initial-mp-approach.pdf" class="text-sm font-semibold link" target="_blank">View MP Email Thread PDF →</a>
           </div>
         </div>
         
@@ -1317,7 +1525,7 @@
           <h4 class="font-bold text-lg text-center">2. Minister of Education Proposal</h4>
           <p class="mt-2 text-slate-700 text-center">Formal proposal submitted to Gillian Keegan (Secretary of State for Education) and her staff regarding LUNA SEN qualifications framework (June 2025).</p>
           <div class="mt-4 text-center">
-            <a href="docs/proposal-minister-education(2)_redacted (1).pdf" class="text-sm font-semibold link" target="_blank">View Minister Proposal PDF →</a>
+            <a href="docs/02-minister-proposal.pdf" class="text-sm font-semibold link" target="_blank">View Minister Proposal PDF →</a>
           </div>
         </div>
         
@@ -1325,7 +1533,7 @@
           <h4 class="font-bold text-lg text-center">3. Justin's Letter to Minister of Education</h4>
           <p class="mt-2 text-slate-700 text-center">Justin Madders MP's letter to Catherine McKinell (Minister of Education) regarding your LUNA SEN qualifications proposal (June 2025).</p>
           <div class="mt-4 text-center">
-            <a href="docs/letter44404_redacted_redacted.pdf" class="text-sm font-semibold link" target="_blank">View Justin's Letter PDF →</a>
+            <a href="docs/03-justin-letter-to-minister.pdf" class="text-sm font-semibold link" target="_blank">View Justin's Letter PDF →</a>
           </div>
         </div>
         
@@ -1333,7 +1541,7 @@
           <h4 class="font-bold text-lg text-center">4. Ofqual RQF Enquiry</h4>
           <p class="mt-2 text-slate-700 text-center">Initial email correspondence with Kirsty at Ofqual regarding RQF enquiries for SEN learners (July 2025).</p>
           <div class="mt-4 text-center">
-            <a href="docs/Gmail%204-%20OFQ0019830_redacted.pdf" class="text-sm font-semibold link" target="_blank">View Ofqual Correspondence PDF →</a>
+            <a href="docs/04-ofqual-rqf-enquiry.pdf" class="text-sm font-semibold link" target="_blank">View Ofqual Correspondence PDF →</a>
           </div>
         </div>
         
@@ -1341,7 +1549,7 @@
           <h4 class="font-bold text-lg text-center">5. Catherine McKinell's Reply</h4>
           <p class="mt-2 text-slate-700 text-center">Catherine McKinell MP's response to Justin's letter directing back to Ofqual, showing proper channels were attempted (August 2025).</p>
           <div class="mt-4 text-center">
-            <a href="docs/2025-0028093%20-%20Justin%20Madders%20MP%20-%20Signed%20(2)_redacted_redacted%20(2).pdf" class="text-sm font-semibold link" target="_blank">View Catherine McKinell Reply PDF →</a>
+            <a href="docs/05-catherine-mckinell-reply.pdf" class="text-sm font-semibold link" target="_blank">View Catherine McKinell Reply PDF →</a>
           </div>
         </div>
         
@@ -1349,7 +1557,7 @@
           <h4 class="font-bold text-lg text-center">6. Ofqual Correspondence with Hannah</h4>
           <p class="mt-2 text-slate-700 text-center">Complete correspondence sequence with Hannah from Ofqual showing automated reply followed by human response, demonstrating inability to answer binary questions (August 2025).</p>
           <div class="mt-4 text-center">
-            <a href="docs/Gmail%20-%20Ofqual%20enquiry1_redacted.pdf" class="text-sm font-semibold link" target="_blank">View Ofqual Correspondence PDF →</a>
+            <a href="docs/06-ofqual-correspondence-hannah.pdf" class="text-sm font-semibold link" target="_blank">View Ofqual Correspondence PDF →</a>
           </div>
         </div>
         
@@ -1357,36 +1565,81 @@
           <h4 class="font-bold text-lg text-center">7. Pre-Action Protocol Letter</h4>
           <p class="mt-2 text-slate-700 text-center">Formal legal letter before claim documenting Ofqual's failure to provide SEN RQF pathway (12 Sept 2025).</p>
           <div class="mt-4 text-center">
-            <a href="docs/Gmail%20-%20Pre-Action%20Protocol%20Letter%20Before%20Claim%20%E2%80%93%20Ofqual%E2%80%99s%20Failure%20to%20Provide%20a%20SEN%20RQF%20Pathway_redacted_redacted.pdf" class="text-sm font-semibold link" target="_blank">View PAP Letter PDF →</a>
+            <a href="docs/07-pre-action-protocol-letter.pdf" class="text-sm font-semibold link" target="_blank">View PAP Letter PDF →</a>
           </div>
         </div>
         
         <div class="card">
-          <h4 class="font-bold text-lg text-center">8. Ofqual's Solicitor Response</h4>
-          <p class="mt-2 text-slate-700 text-center">Ofqual's legal response via Gowling WLG solicitors confirming "The answer is no" RQF was not designed/structured for SEN/EHCP learners(19 Sept 2025).</p>
+          <h4 class="font-bold text-lg text-center">8. Ofqual's Solicitor Response & Reply</h4>
+          <p class="mt-2 text-slate-700 text-center">Ofqual's legal response via Gowling WLG solicitors confirming "The answer is no" RQF was not designed/structured for SEN/EHCP learners, followed by reply to Ofqual's legal team (19 Sept 2025).</p>
+          <div class="mt-4 text-center space-y-2">
+            <div>
+              <a href="docs/08a-ofqual-solicitor-response.pdf" class="text-sm font-semibold link" target="_blank">View Ofqual Solicitor Response PDF →</a>
+            </div>
+            <div>
+              <a href="docs/08b-reply-to-ofqual-legal-response.pdf" class="text-sm font-semibold link" target="_blank">View Reply to Ofqual Legal Response PDF →</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">9. Email to Justin Madders MP - Ofqual's Admission</h4>
+          <p class="mt-2 text-slate-700 text-center">Email to Justin Madders MP explaining Ofqual's admission that RQF was never designed for SEN/EHCP learners and requesting immediate action (19 Sept 2025).</p>
           <div class="mt-4 text-center">
-            <a href="docs/Ofqual Solicator Response-NO-SEN.pdf" class="text-sm font-semibold link" target="_blank">View Ofqual Solicitor Response PDF →</a>
+            <a href="docs/09-email-to-justin-ofqual-admission.pdf" class="text-sm font-semibold link" target="_blank">View Email to Justin Madders MP PDF →</a>
           </div>
         </div>
         
         <div class="card">
-          <h4 class="font-bold text-lg text-center">9. LUNA Annex A Briefing</h4>
+          <h4 class="font-bold text-lg text-center">10. LUNA Annex A Briefing</h4>
           <p class="mt-2 text-slate-700 text-center">LUNA Annex A Briefing document sent to Justin Madders MP after Ofqual's solicitor response, outlining the SEN qualifications framework proposal and legal basis (September 2025).</p>
           <div class="mt-4 text-center space-y-2">
             <div>
-              <a href="docs/LUNA_Annex_A_Briefing_v2%20(4)_redacted_redacted.pdf" class="text-sm font-semibold link" target="_blank">View LUNA Annex A Briefing PDF →</a>
+              <a href="docs/10a-luna-annex-a-briefing.pdf" class="text-sm font-semibold link" target="_blank">View LUNA Annex A Briefing PDF →</a>
             </div>
             <div>
-              <a href="docs/Gmail%20-%20MP-%20ANNEX%20A_redacted.pdf" class="text-sm font-semibold link" target="_blank">View Email Thread with Annex A →</a>
+              <a href="docs/10b-email-thread-annex-a.pdf" class="text-sm font-semibold link" target="_blank">View Email Thread with Annex A →</a>
             </div>
           </div>
         </div>
         
         <div class="card">
-          <h4 class="font-bold text-lg text-center">10. Justin Madders MP Final Response</h4>
+          <h4 class="font-bold text-lg text-center">11. Justin Madders MP Final Response</h4>
           <p class="mt-2 text-slate-700 text-center">Justin Madders MP's final response after reviewing Ofqual's legal letter and LUNA Annex A Briefing (25 Sept 2025).</p>
           <div class="mt-4 text-center">
-            <a href="docs/Gmail%20-%20Email%202%20from%20Justin%20Madders%20MP%20re_%20Government%20Ministers%20and%20Ofqal%20(Case%20Ref_%20ZA65398)_redacted_redacted.pdf" class="text-sm font-semibold link" target="_blank">View Justin's Final Response PDF →</a>
+            <a href="docs/11-justin-madders-final-response.pdf" class="text-sm font-semibold link" target="_blank">View Justin's Final Response PDF →</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">12. Justin Madders MP Follow-Up</h4>
+          <p class="mt-2 text-slate-700 text-center">Justin Madders MP's follow-up email regarding further representations to Government ministers, confirming additional research is being conducted (27 Oct 2025).</p>
+          <div class="mt-4 text-center">
+            <a href="docs/12-justin-madders-follow-up.pdf" class="text-sm font-semibold link" target="_blank">View Justin's Follow-Up PDF →</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">13. Justin Madders MP - Draft Letter Discussion</h4>
+          <p class="mt-2 text-slate-700 text-center">Email exchange with Justin Madders MP regarding draft letter to Schools Minister and clarification on RQF structural issues (10 Nov 2025).</p>
+          <div class="mt-4 text-center">
+            <a href="docs/13-justin-madders-draft-letter-discussion.pdf" class="text-sm font-semibold link" target="_blank">View Justin Madders MP Email PDF →</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">14. Justin Madders MP Correspondence</h4>
+          <p class="mt-2 text-slate-700 text-center">Email correspondence with Justin Madders MP regarding ongoing matters (November 2025).</p>
+          <div class="mt-4 text-center">
+            <a href="docs/14-justin-madders-correspondence.pdf" class="text-sm font-semibold link" target="_blank">View Justin Madders MP Correspondence PDF →</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h4 class="font-bold text-lg text-center">15. Justin Madders MP Letter to Minister</h4>
+          <p class="mt-2 text-slate-700 text-center">Justin Madders MP's letter to the Schools Minister regarding LUNA SEN qualifications framework (10 Nov 2025).</p>
+          <div class="mt-4 text-center">
+            <a href="docs/15-justin-letter-to-minister-nov.pdf" class="text-sm font-semibold link" target="_blank">View Justin Madders MP Letter PDF →</a>
           </div>
         </div>
         
@@ -1397,7 +1650,7 @@
   <!-- TIMELINE -->
   <section id="timeline" class="py-12 bg-slate-50">
     <div class="mx-auto max-w-4xl px-6">
-      <h3 class="text-3xl md:text-4xl font-extrabold text-center mb-8">Timeline (June–Sept 2025)</h3>
+      <h3 class="text-3xl md:text-4xl font-extrabold text-center mb-8">Timeline (June 2025–Present)</h3>
       
       <div class="timeline-container">
         <div class="timeline-item">
@@ -1449,8 +1702,17 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-date">19 Sept 2025</div>
-            <h4>Ofqual's Solicitor Response</h4>
-            <p>Ofqual's legal response via Gowling WLG solicitors confirming "The answer is no" - RQF was not designed/structured for SEN/EHCP learners</p>
+            <h4>Ofqual's Solicitor Response & Reply</h4>
+            <p>Ofqual's legal response via Gowling WLG solicitors confirming "The answer is no" - RQF was not designed/structured for SEN/EHCP learners, followed by reply to Ofqual's legal team</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">19 Sept 2025</div>
+            <h4>Email to Justin Madders MP - Ofqual's Admission</h4>
+            <p>Email to Justin Madders MP explaining Ofqual's admission that RQF was never designed for SEN/EHCP learners and requesting immediate action</p>
           </div>
         </div>
         
@@ -1469,6 +1731,33 @@
             <div class="timeline-date">25 Sept 2025</div>
             <h4>Justin Madders MP Final Response</h4>
             <p>Justin Madders MP's final response after reviewing Ofqual's legal letter and LUNA Annex A Briefing</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">27 Oct 2025</div>
+            <h4>Justin Madders MP Follow-Up</h4>
+            <p>Justin Madders MP's follow-up email regarding further representations to Government ministers, confirming additional research is being conducted</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">10 Nov 2025</div>
+            <h4>Justin Madders MP - Draft Letter Discussion</h4>
+            <p>Email exchange with Justin Madders MP regarding draft letter to Schools Minister and clarification on RQF structural issues</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">10 Nov 2025</div>
+            <h4>Justin Madders MP Letter to Minister</h4>
+            <p>Justin Madders MP's letter to the Schools Minister regarding LUNA SEN qualifications framework</p>
           </div>
         </div>
       </div>
@@ -1492,7 +1781,7 @@
             <figcaption class="mt-3 text-xs md:text-sm opacity-70"> SENCo</figcaption>
           </figure>
           <figure class="card flex-shrink-0 w-full md:w-1/3">
-            <blockquote class="text-sm md:text-base">"SRQF would give employers clarity and young people a fair route into work."</blockquote>
+            <blockquote class="text-sm md:text-base">"LSRQF would give employers clarity and young people a fair route into work."</blockquote>
             <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Employer</figcaption>
           </figure>
           <figure class="card flex-shrink-0 w-full md:w-1/3">
@@ -1512,7 +1801,7 @@
             <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Parent</figcaption>
           </figure>
           <figure class="card flex-shrink-0 w-full md:w-1/3">
-            <blockquote class="text-sm md:text-base">"The RQF gap is real. We need SRQF for proper SEN qualifications framework."</blockquote>
+            <blockquote class="text-sm md:text-base">"The RQF gap is real. We need LSRQF for proper SEN qualifications framework."</blockquote>
             <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Local Authority</figcaption>
           </figure>
           <figure class="card flex-shrink-0 w-full md:w-1/3">
@@ -1576,7 +1865,7 @@
             <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Deputy Head</figcaption>
           </figure>
           <figure class="card flex-shrink-0 w-full md:w-1/3">
-            <blockquote class="text-sm md:text-base">"The SRQF framework would transform how we support SEN learners."</blockquote>
+            <blockquote class="text-sm md:text-base">"The LSRQF framework would transform how we support SEN learners."</blockquote>
             <figcaption class="mt-3 text-xs md:text-sm opacity-70"> College Staff</figcaption>
           </figure>
           <!-- Duplicate for seamless loop -->
@@ -1589,7 +1878,7 @@
             <figcaption class="mt-3 text-xs md:text-sm opacity-70"> SENCo</figcaption>
           </figure>
           <figure class="card flex-shrink-0 w-full md:w-1/3">
-            <blockquote class="text-sm md:text-base">"SRQF would give employers clarity and young people a fair route into work."</blockquote>
+            <blockquote class="text-sm md:text-base">"LSRQF would give employers clarity and young people a fair route into work."</blockquote>
             <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Employer</figcaption>
           </figure>
           <figure class="card flex-shrink-0 w-full md:w-1/3">
@@ -1609,7 +1898,7 @@
             <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Parent</figcaption>
           </figure>
           <figure class="card flex-shrink-0 w-full md:w-1/3">
-            <blockquote class="text-sm md:text-base">"The RQF gap is real. We need SRQF for proper SEN qualifications framework."</blockquote>
+            <blockquote class="text-sm md:text-base">"The RQF gap is real. We need LSRQF for proper SEN qualifications framework."</blockquote>
             <figcaption class="mt-3 text-xs md:text-sm opacity-70"> Local Authority</figcaption>
           </figure>
           <figure class="card flex-shrink-0 w-full md:w-1/3">
@@ -1658,13 +1947,13 @@
           </summary>
           <div class="faq-content">
             Only to record your support and, if you consent, to send campaign updates. See our
-            <a href="https://example.com/privacy.html" class="underline">Privacy Notice</a> for full details.
+            <a href="https://petition.lunasenregulator.org.uk/privacy.html" class="underline luna-text-gradient">Privacy Notice</a> for full details.
           </div>
         </details>
         
         <details class="faq-card">
           <summary class="faq-summary">
-            <span>What is the SRQF?</span>
+            <span>What is the LSRQF?</span>
             <span class="text-xl md:text-2xl">+</span>
           </summary>
           <div class="faq-content">
@@ -1707,7 +1996,7 @@
        "acceptedAnswer":{"@type":"Answer","text":"Anyone who supports fair protection and recognition for SEND learners across the UK - parents, teachers, employers, and community members."}},
       {"@type":"Question","name":"How will my details be used?",
        "acceptedAnswer":{"@type":"Answer","text":"Only to record your support and, if you consent, to send campaign updates, as described in our Privacy Notice."}},
-      {"@type":"Question","name":"What is the SRQF?",
+      {"@type":"Question","name":"What is the LSRQF?",
        "acceptedAnswer":{"@type":"Answer","text":"The Specialist SEN Qualifications Framework - a dedicated regulatory system designed specifically for neurodiverse learners, unlike the current RQF which wasn't built for SEN needs."}},
       {"@type":"Question","name":"Why is this important now?",
        "acceptedAnswer":{"@type":"Answer","text":"Ofqual's own solicitors confirmed the RQF wasn't designed for SEN learners. This creates a fundamental gap that's destroying futures daily. We need proper recognition now."}},
@@ -1720,9 +2009,8 @@
   <!-- FOOTER -->
   <footer class="bg-black" style="padding: 20px 0;">
     <div class="mx-auto max-w-6xl px-6 text-sm text-white">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-2">
-          <p class="text-center md:text-left">Copyright © 2025 <span class="gradient-text">LUNA</span> SEN Regulator - All Rights Reserved.</p>
-       
+      <div class="flex flex-col items-center">
+        <p class="text-center">Copyright © 2025 <span class="gradient-text">LUNA</span> SEN Regulator - All Rights Reserved.</p>
       </div>
     </div>
   </footer>
@@ -1740,23 +2028,23 @@
       <div class="form-modal-content">
         <form id="campaignForm">
           <div class="form-group">
-            <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
-            <input type="text" name="name" required class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300">
+            <label for="formName" class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+            <input type="text" id="formName" name="name" required class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300">
           </div>
           
           <div class="form-group">
-            <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
-            <input type="email" name="email" required class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300">
+            <label for="formEmail" class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+            <input type="email" id="formEmail" name="email" required class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300">
           </div>
           
           <div class="form-group">
-            <label class="block text-sm font-semibold text-gray-700 mb-2">Postcode *</label>
-            <input type="text" name="postcode" required class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300" placeholder="e.g. CH1 1AA">
+            <label for="formPostcode" class="block text-sm font-semibold text-gray-700 mb-2">Postcode *</label>
+            <input type="text" id="formPostcode" name="postcode" required class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300" placeholder="e.g. CH1 1AA">
           </div>
           
           <div class="form-group">
-            <label class="block text-sm font-semibold text-gray-700 mb-2">Your Role</label>
-            <select name="role" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300">
+            <label for="formRole" class="block text-sm font-semibold text-gray-700 mb-2">Your Role</label>
+            <select id="formRole" name="role" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300">
               <option value="">Select your role</option>
               <option value="parent">Parent</option>
               <option value="young-person">Young Person</option>
@@ -1769,8 +2057,8 @@
           </div>
           
           <div class="form-group">
-            <label class="block text-sm font-semibold text-gray-700 mb-2">Your Voice (Optional)</label>
-            <textarea name="yourVoice" rows="3" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300" placeholder="Share your thoughts about SEN qualifications and LUNA SEN Regulator..."></textarea>
+            <label for="formYourVoice" class="block text-sm font-semibold text-gray-700 mb-2">Your Voice (Optional)</label>
+            <textarea id="formYourVoice" name="yourVoice" rows="3" class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300" placeholder="Share your thoughts about SEN qualifications and LUNA SEN Regulator..."></textarea>
             <p class="text-xs text-gray-500 mt-1">
               <strong>Note:</strong> All submissions are automatically moderated. Content containing inappropriate language, spam, or irrelevant material will be rejected. Please keep your message relevant to SEN qualifications and LUNA SEN Regulator.
             </p>
@@ -2071,10 +2359,21 @@
         // Silently handle errors - form submission continues regardless
       });
       });
+      
+      // Fetch Parliament petition count
+      const el = document.getElementById('parl-count');
+      if (el) {
+        fetch('https://petition.parliament.uk/petitions/743461.json')
+          .then(response => response.json())
+          .then(data => {
+            const count = data.data.attributes.signature_count;
+            el.textContent = Number(count).toLocaleString();
+          })
+          .catch(() => {
+            el.textContent = '0';
+          });
+      }
     }); // Close DOMContentLoaded
-    const MANUAL_PARLIAMENT_TALLY = 0; // ← Parliament petition not yet created - will update once live
-    const el = document.getElementById('parl-count');
-    if (el) el.textContent = Number(MANUAL_PARLIAMENT_TALLY).toLocaleString();
     
     // Force Firefox favicon reload (ensures all browsers have favicon) - only reload if not already loaded
     (function(){
@@ -2088,7 +2387,7 @@
               const favicon = document.createElement('link');
               favicon.rel = 'icon';
               favicon.type = 'image/x-icon';
-              favicon.href = './favicon.ico?' + new Date().getTime();
+              favicon.href = './assets/favicon.ico?' + new Date().getTime();
               existingFavicon.parentNode.replaceChild(favicon, existingFavicon);
             }
           }
@@ -2100,7 +2399,7 @@
     
     // Social Share Functionality
     (function(){
-      const url = 'https://example.com/';
+      const url = 'https://petition.lunasenregulator.org.uk/';
       const title = 'Support the LUNA SEN Regulator Petition';
       const text = 'Join the campaign for equal recognition and protection for SEN learners across the UK.';
       
@@ -2157,9 +2456,9 @@
       });
     });
     
-    // Load real testimonials from Google Sheets
+    // Load real testimonials from Google Sheets - 50 most recent, no duplicates
     function loadTestimonials() {
-      const webhookUrl = 'https://script.google.com/macros/s/AKfycbxjNd2Ds7opvYCclOXoAXE6gA5npMun--GrzBjFW_BLYorrZ-ghgXb_17UMGYINYKw1/exec?action=getTestimonials';
+      const webhookUrl = 'https://script.google.com/macros/s/AKfycbxjNd2Ds7opvYCclOXoAXE6gA5npMun--GrzBjFW_BLYorrZ-ghgXb_17UMGYINYKw1/exec?action=getTestimonials&limit=50';
       
       fetch(webhookUrl, {
         method: 'GET',
@@ -2178,12 +2477,45 @@
       })
       .then(data => {
         if (data && data.status === 'success' && data.testimonials) {
-          updateTestimonialsDisplay(data.testimonials);
+          // Process testimonials: get 50 most recent, remove duplicates
+          const uniqueTestimonials = removeDuplicatesAndLimit(data.testimonials, 50);
+          updateTestimonialsDisplay(uniqueTestimonials);
         }
       })
       .catch(() => {
         // Keep the default testimonials that are already in the HTML
       });
+    }
+    
+    // Remove duplicates and limit to 50 most recent testimonials
+    function removeDuplicatesAndLimit(testimonials, limit) {
+      if (!testimonials || testimonials.length === 0) return [];
+      
+      // Create a Map to track unique testimonials by text (case-insensitive)
+      const seen = new Map();
+      const unique = [];
+      
+      // Process testimonials in reverse order to get most recent first
+      const reversed = [...testimonials].reverse();
+      
+      for (const testimonial of reversed) {
+        if (!testimonial || !testimonial.text) continue;
+        
+        // Normalize text for comparison (lowercase, trim)
+        const normalizedText = testimonial.text.trim().toLowerCase();
+        
+        // Skip if we've already seen this exact text
+        if (!seen.has(normalizedText)) {
+          seen.set(normalizedText, true);
+          unique.push(testimonial);
+          
+          // Stop when we have 50 unique testimonials
+          if (unique.length >= limit) break;
+        }
+      }
+      
+      // Return in chronological order (oldest to newest, or reverse for newest first)
+      return unique.reverse();
     }
     
     function updateTestimonialsDisplay(testimonials) {
@@ -2193,7 +2525,13 @@
       // Clear existing testimonials
       carousel.innerHTML = '';
       
-      // Create testimonials for display (duplicate for seamless loop)
+      // If no testimonials, keep default HTML testimonials
+      if (!testimonials || testimonials.length === 0) {
+        return;
+      }
+      
+      // For seamless infinite scroll, duplicate the testimonials
+      // This allows the animation to loop smoothly
       const allTestimonials = [...testimonials, ...testimonials];
       
       allTestimonials.forEach((testimonial, index) => {
@@ -2205,7 +2543,7 @@
         
         figure.innerHTML = `
           <blockquote class="text-sm md:text-base">"${testimonial.text}"</blockquote>
-          <figcaption class="mt-3 text-xs md:text-sm opacity-70">${testimonial.role}</figcaption>
+          <figcaption class="mt-3 text-xs md:text-sm opacity-70">${testimonial.role || 'Supporter'}</figcaption>
         `;
         
         carousel.appendChild(figure);
@@ -2257,10 +2595,11 @@
     "@context":"https://schema.org",
     "@type":"Organization",
     "name":"LUNA",
-    "url":"https://example.com",
-    "logo":"https://example.com/assets/Luna-logo.png",
+    "url":"https://petition.lunasenregulator.org.uk",
+    "logo":"https://petition.lunasenregulator.org.uk/assets/LUNA-SEN-REG-LOGO.png",
     "areaServed":"GB",
-    "founder":{"@type":"Person","name":"Lauren Moore","jobTitle":"Founder & Creator"},
+    "founder":{"@type":"Person","name":"Lauren Moore","jobTitle":"Founder, Creator & Owner"},
+    "copyrightHolder":{"@type":"Person","name":"Lauren Moore"},
     "contactPoint":[{"@type":"ContactPoint","contactType":"campaign","email":"petition@lunasenregulator.org.uk"}]
   }
   </script>
@@ -2271,11 +2610,11 @@
     "@context":"https://schema.org",
     "@type":"WebSite",
     "name":"LUNA",
-    "url":"https://example.com",
+    "url":"https://petition.lunasenregulator.org.uk",
     "inLanguage":"en-GB",
     "potentialAction":{
       "@type":"SearchAction",
-      "target":"https://example.com/search?q={query}",
+      "target":"https://petition.lunasenregulator.org.uk/search?q={query}",
       "query-input":"required name=query"
     }
   }
@@ -2287,17 +2626,17 @@
     "@context":"https://schema.org",
     "@type":"WebPage",
     "name":"LUNA SEN Regulator Petition",
-    "url":"https://example.com/",
-    "isPartOf":{"@type":"WebSite","name":"LUNA","url":"https://example.com"},
+    "url":"https://petition.lunasenregulator.org.uk/",
+    "isPartOf":{"@type":"WebSite","name":"LUNA","url":"https://petition.lunasenregulator.org.uk"},
     "description":"Public petition to support the LUNA SEN Regulator.",
-    "author":{"@type":"Person","name":"Lauren Moore"},
+    "author":{"@type":"Person","name":"Lauren Moore","jobTitle":"Founder, Creator & Owner"},
     "inLanguage":"en-GB",
     "about":{"@type":"Thing","name":"LUNA SEN Regulator Petition UK"},
-    "keywords":["LUNA SEN Regulator Petition UK","SEND petition UK","SEN learners rights","special needs regulator UK","neurodiverse education rights","Ofqual SEN gap","SRQF"],
+    "keywords":["LUNA SEN Regulator Petition UK","SEND petition UK","SEN learners rights","special needs regulator UK","neurodiverse education rights","Ofqual SEN gap","LSRQF"],
     "potentialAction":{
       "@type":"JoinAction",
       "name":"Sign the Petition",
-      "target":"https://example.com/#signup"
+      "target":"https://petition.lunasenregulator.org.uk/#petition"
     }
   }
   </script>
@@ -2311,7 +2650,7 @@
     "itemListElement":[
       {"@type":"CreativeWork","headline":"My child has an EHCP but no pathway that fits","text":"My child has an EHCP but no pathway that fits. Adjustments are not the same as a designed framework."},
       {"@type":"CreativeWork","headline":"We need qualifications mapped to EHCP outcomes","text":"We need qualifications mapped to EHCP outcomes, not after-the-fact accommodations."},
-      {"@type":"CreativeWork","headline":"SRQF would give employers clarity","text":"SRQF would give employers clarity and young people a fair route into work."},
+      {"@type":"CreativeWork","headline":"LSRQF would give employers clarity","text":"LSRQF would give employers clarity and young people a fair route into work."},
       {"@type":"CreativeWork","headline":"The current system fails our children daily","text":"The current system fails our children daily. We need LUNA SEN Regulator now."},
       {"@type":"CreativeWork","headline":"As a teacher, I see students struggle","text":"As a teacher, I see students struggle with qualifications not designed for their needs."}
     ]
