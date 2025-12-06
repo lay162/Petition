@@ -236,24 +236,30 @@
       border-top: 4px solid var(--secondary); 
     }
     
-    /* FAQ Hover effects */
+    /* FAQ Hover effects - using outline to prevent text movement */
     .faq-card:nth-child(1):hover, .faq-card:nth-child(4):hover { 
-      border: 2px solid var(--primary) !important; 
+      border: 1px solid var(--border-color-light) !important;
+      border-top: 4px solid var(--primary) !important;
+      outline: 2px solid var(--primary);
+      outline-offset: -2px;
       box-shadow: 0 4px 16px rgba(255, 105, 180, 0.15); 
-      transform: translateY(-2px); 
     }
     .faq-card:nth-child(2):hover, .faq-card:nth-child(5):hover { 
       background: linear-gradient(var(--bg-content-lighter-light), var(--bg-content-lighter-light)) padding-box,
                   var(--text-gradient) border-box;
-      border: 2px solid transparent;
+      border: 1px solid transparent !important;
+      border-top: 4px solid transparent !important;
+      outline: 2px solid transparent;
+      outline-offset: -2px;
       border-radius: 1rem;
       box-shadow: 0 4px 16px rgba(122, 215, 240, 0.15); 
-      transform: translateY(-2px); 
     }
     .faq-card:nth-child(3):hover, .faq-card:nth-child(6):hover { 
-      border: 2px solid var(--secondary) !important; 
+      border: 1px solid var(--border-color-light) !important;
+      border-top: 4px solid var(--secondary) !important;
+      outline: 2px solid var(--secondary);
+      outline-offset: -2px;
       box-shadow: 0 4px 16px rgba(122, 215, 240, 0.15); 
-      transform: translateY(-2px); 
     }
     
     /* FAQ Summary styling - Mobile responsive */
