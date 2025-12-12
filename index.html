@@ -2727,5 +2727,182 @@
       window.addEventListener('hashchange', scrollToNewestCard);
     })();
   </script>
+
+  <!-- Cookie Notice (Informational - Essential Cookies Only) -->
+  <div id="cookieNotice" class="cookie-notice" style="display: none;">
+    <div class="cookie-notice-content">
+      <p class="cookie-notice-text">
+        We use only essential cookies necessary for form functionality. No tracking or analytics cookies are used. 
+        <a href="privacy.html#cookies" class="cookie-notice-link">Learn more in our Privacy Policy</a>
+      </p>
+      <button id="cookieNoticeClose" class="cookie-notice-close" aria-label="Close cookie notice">✕</button>
+    </div>
+  </div>
+
+  <style>
+    .cookie-notice {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: black;
+      color: white;
+      padding: 1.25rem 1rem;
+      padding-top: 1.5rem;
+      z-index: 10000;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    }
+    .cookie-notice::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+    }
+    .cookie-notice-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .cookie-notice-text {
+      flex: 1;
+      min-width: 250px;
+      margin: 0;
+      font-size: 0.875rem;
+      line-height: 1.6;
+      color: white;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .cookie-notice-link {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    .cookie-notice-link:hover {
+      text-decoration: underline;
+      text-decoration-color: var(--primary);
+    }
+    .cookie-notice-close {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border: none;
+      color: white;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      flex-shrink: 0;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(255, 105, 180, 0.3);
+    }
+    .cookie-notice-close:hover {
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+    }
+    .cookie-notice-close:active {
+      transform: translateY(0) scale(1);
+    }
+    @media (max-width: 768px) {
+      .cookie-notice {
+        padding: 1rem;
+        padding-top: 1.25rem;
+      }
+      .cookie-notice-content {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .cookie-notice-text {
+        font-size: 0.8125rem;
+        line-height: 1.5;
+        padding-right: 0.5rem;
+      }
+      .cookie-notice-close {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+        flex-shrink: 0;
+      }
+    }
+    @media (max-width: 480px) {
+      .cookie-notice {
+        padding: 0.875rem;
+        padding-top: 1.125rem;
+      }
+      .cookie-notice-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.875rem;
+      }
+      .cookie-notice-text {
+        font-size: 0.75rem;
+        line-height: 1.4;
+        width: 100%;
+      }
+      .cookie-notice-close {
+        align-self: flex-end;
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+      }
+    }
+    @media (max-width: 360px) {
+      .cookie-notice {
+        padding: 0.75rem;
+        padding-top: 1rem;
+      }
+      .cookie-notice-text {
+        font-size: 0.6875rem;
+      }
+    }
+  </style>
+
+  <script>
+    // Cookie Notice Management
+    (function() {
+      const COOKIE_NOTICE_KEY = 'luna_cookie_notice_dismissed';
+      const cookieNotice = document.getElementById('cookieNotice');
+      const closeButton = document.getElementById('cookieNoticeClose');
+      
+      // Check if notice was already dismissed
+      const wasDismissed = localStorage.getItem(COOKIE_NOTICE_KEY);
+      
+      if (!wasDismissed && cookieNotice && closeButton) {
+        // Show notice after a short delay
+        setTimeout(function() {
+          cookieNotice.style.display = 'block';
+        }, 1000);
+        
+        // Handle close button
+        closeButton.addEventListener('click', function() {
+          cookieNotice.style.display = 'none';
+          localStorage.setItem(COOKIE_NOTICE_KEY, 'true');
+        });
+        
+        // Also allow dismissing by clicking outside (on the notice itself)
+        cookieNotice.addEventListener('click', function(e) {
+          if (e.target === cookieNotice) {
+            cookieNotice.style.display = 'none';
+            localStorage.setItem(COOKIE_NOTICE_KEY, 'true');
+          }
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
