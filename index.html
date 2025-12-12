@@ -1672,7 +1672,7 @@
           </div>
         </div>
         
-        <div class="card">
+        <div class="card" id="evidence-newest">
           <h4 class="font-bold text-lg text-center">15. Justin Madders MP Letter to Minister</h4>
           <p class="mt-2 text-slate-700 text-center">Justin Madders MP's letter to the Schools Minister regarding LUNA SEN qualifications framework (10 Nov 2025).</p>
           <div class="mt-4 text-center">
@@ -2694,6 +2694,38 @@
       {"@type":"CreativeWork","headline":"As a teacher, I see students struggle","text":"As a teacher, I see students struggle with qualifications not designed for their needs."}
     ]
   }
+  </script>
+
+  <!-- Scroll to newest evidence card when hash is #evidence-newest -->
+  <script>
+    (function() {
+      function scrollToNewestCard() {
+        if (window.location.hash === '#evidence-newest') {
+          const card = document.getElementById('evidence-newest');
+          if (card) {
+            // Use requestAnimationFrame to ensure DOM is ready
+            requestAnimationFrame(function() {
+              const cardTop = card.offsetTop;
+              window.scrollTo({
+                top: cardTop - 20,
+                behavior: 'smooth'
+              });
+            });
+          }
+        }
+      }
+      
+      // Run when page loads
+      if (document.readyState === 'complete') {
+        scrollToNewestCard();
+      } else {
+        window.addEventListener('load', scrollToNewestCard);
+        document.addEventListener('DOMContentLoaded', scrollToNewestCard);
+      }
+      
+      // Handle hash changes
+      window.addEventListener('hashchange', scrollToNewestCard);
+    })();
   </script>
 </body>
 </html>
